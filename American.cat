@@ -1,0 +1,845 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="e0ab-b75c-9a1b-1d47" name="American" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="c4ca-1ece-ac34-246b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <categoryEntries>
+    <categoryEntry id="54a1-d682-1d08-1e4c" name="Alpha 66" hidden="false"/>
+    <categoryEntry id="3537-0416-30f7-2b6b" name="M109 or M163" hidden="false">
+      <comment>Restrict Clarence Tucker to M901 or M163</comment>
+    </categoryEntry>
+    <categoryEntry id="976a-52f7-8178-1507" name="Abrams Tank" hidden="false">
+      <comment>Restrict Silver Bullet to Abrams Tank	</comment>
+    </categoryEntry>
+  </categoryEntries>
+  <selectionEntries>
+    <selectionEntry id="de0d-88df-496d-1666" name="Humvee-TOW" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="3f14-6671-95e7-05b5" name="Humvee-TOW" hidden="false" typeId="d470-1387-e9b7-4e31" typeName="Tank">
+          <characteristics>
+            <characteristic name="Crew Slots" typeId="0ab1-226b-bc56-8d04">3</characteristic>
+            <characteristic name="Initiative" typeId="4bdf-d9ca-d63e-e9ae">4</characteristic>
+            <characteristic name="Attack" typeId="511c-4053-b96a-3393">0</characteristic>
+            <characteristic name="Defence" typeId="5aea-3707-f320-3b58">0</characteristic>
+            <characteristic name="Damage Capacity" typeId="b389-b659-b7d8-1dbe">2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="cb03-330c-be1b-2c96" name="Fast" hidden="false" targetId="458a-cf6f-36e5-e79a" type="rule"/>
+        <infoLink id="21e1-9a02-8ff3-1deb" name="Missiles (X)" hidden="false" targetId="726c-f879-474a-444f" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Missiles (4)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="b46d-8212-68e3-0291" name="Scout" hidden="false" targetId="d441-5387-0036-2dab" type="rule"/>
+        <infoLink id="cb6e-8ae1-b018-9fd6" name="Spearhead" hidden="false" targetId="3da3-8525-09c9-8125" type="rule"/>
+        <infoLink id="89da-793e-2bce-b8cc" name="Wheeled" hidden="false" targetId="73d4-7716-8d7b-006a" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="e557-51c0-575b-b14b" name="New CategoryLink" hidden="false" targetId="41cd-9622-6b80-1bc3" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="e93b-239b-bd56-3d18" name="Crew (3)" hidden="false" collective="false" import="true" targetId="3fb5-adf7-223b-9ab7" type="selectionEntryGroup"/>
+        <entryLink id="4faf-071a-3758-8cdd" name="Upgrades" hidden="false" collective="false" import="true" targetId="836f-bad9-26e7-7b30" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="c525-9df6-1886-28e4" value="12.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d94b-a0f7-ab4c-fae8" name="LAV-AT" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="9a36-f58e-2ca9-a37a" name="LAV-AT" hidden="false" typeId="d470-1387-e9b7-4e31" typeName="Tank">
+          <characteristics>
+            <characteristic name="Crew Slots" typeId="0ab1-226b-bc56-8d04">3</characteristic>
+            <characteristic name="Initiative" typeId="4bdf-d9ca-d63e-e9ae">5</characteristic>
+            <characteristic name="Attack" typeId="511c-4053-b96a-3393">0</characteristic>
+            <characteristic name="Defence" typeId="5aea-3707-f320-3b58">0</characteristic>
+            <characteristic name="Damage Capacity" typeId="b389-b659-b7d8-1dbe">3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="7987-74c8-6329-8db2" name="Fast" hidden="false" targetId="458a-cf6f-36e5-e79a" type="rule"/>
+        <infoLink id="3470-85c0-1403-3542" name="Hammerhead" hidden="false" targetId="5807-b2d3-c117-d56b" type="rule"/>
+        <infoLink id="5dee-3fb2-4d87-e5fc" name="Missiles (X)" hidden="false" targetId="726c-f879-474a-444f" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Missiles (4)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="a13e-fee5-5572-9a1f" name="Wheeled" hidden="false" targetId="73d4-7716-8d7b-006a" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="73d7-bbfe-f9f4-7eaf" name="New CategoryLink" hidden="false" targetId="41cd-9622-6b80-1bc3" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="5932-7256-19bd-d270" name="Upgrades" hidden="false" collective="false" import="true" targetId="836f-bad9-26e7-7b30" type="selectionEntryGroup"/>
+        <entryLink id="9658-23c6-8474-4083" name="Crew (3)" hidden="false" collective="false" import="true" targetId="3fb5-adf7-223b-9ab7" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="c525-9df6-1886-28e4" value="12.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1c9f-dbc3-9a72-6c6f" name="LAV-25" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="0718-6b88-e33d-8724" name="LAV-25" hidden="false" typeId="d470-1387-e9b7-4e31" typeName="Tank">
+          <characteristics>
+            <characteristic name="Crew Slots" typeId="0ab1-226b-bc56-8d04">3</characteristic>
+            <characteristic name="Initiative" typeId="4bdf-d9ca-d63e-e9ae">8</characteristic>
+            <characteristic name="Attack" typeId="511c-4053-b96a-3393">2</characteristic>
+            <characteristic name="Defence" typeId="5aea-3707-f320-3b58">0</characteristic>
+            <characteristic name="Damage Capacity" typeId="b389-b659-b7d8-1dbe">3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="8d78-895f-8c61-49d9" name="Fast" hidden="false" targetId="458a-cf6f-36e5-e79a" type="rule"/>
+        <infoLink id="a45b-329e-8e8b-8153" name="Rapid Fire (X)" hidden="false" targetId="0406-4110-1519-7897" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Rapid Fire (5)"/>
+            <modifier type="set" field="description" value="This Model has 5 Attack when shooting at Helicopters or targets with 0 Base Defence."/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="b936-9673-7d98-e79b" name="Scout" hidden="false" targetId="d441-5387-0036-2dab" type="rule"/>
+        <infoLink id="d800-337b-3150-550c" name="Wheeled" hidden="false" targetId="73d4-7716-8d7b-006a" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="7f63-9265-79b9-0962" name="New CategoryLink" hidden="false" targetId="41cd-9622-6b80-1bc3" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="17f4-fd2d-6595-63ec" name="Upgrades" hidden="false" collective="false" import="true" targetId="836f-bad9-26e7-7b30" type="selectionEntryGroup"/>
+        <entryLink id="2e88-dcb9-24d7-f623" name="Crew (3)" hidden="false" collective="false" import="true" targetId="3fb5-adf7-223b-9ab7" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="c525-9df6-1886-28e4" value="11.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5738-86e1-7e86-8a42" name="M901 ITV" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="903b-fdab-1183-6276" name="M901 ITV" hidden="false" typeId="d470-1387-e9b7-4e31" typeName="Tank">
+          <characteristics>
+            <characteristic name="Crew Slots" typeId="0ab1-226b-bc56-8d04">4</characteristic>
+            <characteristic name="Initiative" typeId="4bdf-d9ca-d63e-e9ae">4</characteristic>
+            <characteristic name="Attack" typeId="511c-4053-b96a-3393">0</characteristic>
+            <characteristic name="Defence" typeId="5aea-3707-f320-3b58">0</characteristic>
+            <characteristic name="Damage Capacity" typeId="b389-b659-b7d8-1dbe">3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="4877-9512-3f56-e0de" name="Hammerhead" hidden="false" targetId="5807-b2d3-c117-d56b" type="rule"/>
+        <infoLink id="4307-5b5d-48d1-e64c" name="Missiles (X)" hidden="false" targetId="726c-f879-474a-444f" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Missiles (4)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="652c-0dcd-504d-b22b" name="Spearhead" hidden="false" targetId="3da3-8525-09c9-8125" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="501e-69b4-bc50-33d0" name="New CategoryLink" hidden="false" targetId="41cd-9622-6b80-1bc3" primary="true"/>
+        <categoryLink id="1333-add6-8cea-44dd" name="M109 or M163 Only" hidden="false" targetId="3537-0416-30f7-2b6b" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="4c39-40d0-19f3-1494" name="Upgrades" hidden="false" collective="false" import="true" targetId="836f-bad9-26e7-7b30" type="selectionEntryGroup"/>
+        <entryLink id="7dce-5798-6ffd-1a00" name="Crew (4)" hidden="false" collective="false" import="true" targetId="ea6e-d90f-39db-177a" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="c525-9df6-1886-28e4" value="14.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d78c-510e-331f-ded3" name="M163 VADS" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="e7f8-8b3e-cbc5-7add" name="M163 VADS" hidden="false" typeId="d470-1387-e9b7-4e31" typeName="Tank">
+          <characteristics>
+            <characteristic name="Crew Slots" typeId="0ab1-226b-bc56-8d04">3</characteristic>
+            <characteristic name="Initiative" typeId="4bdf-d9ca-d63e-e9ae">7</characteristic>
+            <characteristic name="Attack" typeId="511c-4053-b96a-3393">2</characteristic>
+            <characteristic name="Defence" typeId="5aea-3707-f320-3b58">0</characteristic>
+            <characteristic name="Damage Capacity" typeId="b389-b659-b7d8-1dbe">3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="03e3-6ec4-60c1-49e5" name="Scout" hidden="false" targetId="d441-5387-0036-2dab" type="rule"/>
+        <infoLink id="3f90-e23d-c298-530a" name="Rapid Fire (X)" hidden="false" targetId="0406-4110-1519-7897" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Rapid Fire (7)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="37aa-2bc8-ad12-6e18" name="New CategoryLink" hidden="false" targetId="41cd-9622-6b80-1bc3" primary="true"/>
+        <categoryLink id="2f6b-9c58-155c-038b" name="M109 or M163 Only" hidden="false" targetId="3537-0416-30f7-2b6b" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="bbf7-0e96-112c-a9f5" name="Upgrades" hidden="false" collective="false" import="true" targetId="836f-bad9-26e7-7b30" type="selectionEntryGroup"/>
+        <entryLink id="8cc6-9cce-9524-f017" name="Crew (3)" hidden="false" collective="false" import="true" targetId="3fb5-adf7-223b-9ab7" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="c525-9df6-1886-28e4" value="12.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="be0d-26e2-fb72-a549" name="Cobra" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="009e-f0ed-63e8-1552" name="Cobra" hidden="false" typeId="451c-01d4-9710-cb24" typeName="Helicopter">
+          <characteristics>
+            <characteristic name="Crew Slots" typeId="bf6f-f512-5674-b503">2</characteristic>
+            <characteristic name="Initiative" typeId="e219-982f-5433-3abd">7</characteristic>
+            <characteristic name="Attack" typeId="4e57-cebc-8da6-d530">2</characteristic>
+            <characteristic name="Defence" typeId="020f-df40-e821-e102">3</characteristic>
+            <characteristic name="Damage Capacity" typeId="ed1d-6e05-2aa0-3a02">4</characteristic>
+            <characteristic name="Ammo Slots" typeId="328e-bbfc-bbb0-fb1e">2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="76a1-4ec3-55fe-a5b6" name="Rapid Fire (X)" hidden="false" targetId="0406-4110-1519-7897" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Rapid Fire (5)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="9998-b2bd-7986-a03a" name="New CategoryLink" hidden="false" targetId="5c6a-3ad0-54b2-6193" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="c807-e0a3-c7f2-1fb8" name="Crew (2)" hidden="false" collective="false" import="true" targetId="4c36-38d4-1b24-5162" type="selectionEntryGroup"/>
+        <entryLink id="d782-7b5f-1b90-4f03" name="Upgrades" hidden="false" collective="false" import="true" targetId="836f-bad9-26e7-7b30" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="c525-9df6-1886-28e4" value="20.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="aecf-2b76-e55b-1e57" name="IPM1 Abrams" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="7227-50eb-995b-ba28" name="IPM1 Abrams" hidden="false" typeId="d470-1387-e9b7-4e31" typeName="Tank">
+          <characteristics>
+            <characteristic name="Crew Slots" typeId="0ab1-226b-bc56-8d04">4</characteristic>
+            <characteristic name="Initiative" typeId="4bdf-d9ca-d63e-e9ae">8</characteristic>
+            <characteristic name="Attack" typeId="511c-4053-b96a-3393">4</characteristic>
+            <characteristic name="Defence" typeId="5aea-3707-f320-3b58">2</characteristic>
+            <characteristic name="Damage Capacity" typeId="b389-b659-b7d8-1dbe">8</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="463d-6484-503a-17f8" name="Advanced Stabiliser" hidden="false" targetId="966f-45ab-6ac3-c837" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="3e55-1ee6-215f-701c" name="New CategoryLink" hidden="false" targetId="41cd-9622-6b80-1bc3" primary="true"/>
+        <categoryLink id="63ea-c8a1-cc13-a117" name="Abrams Tank" hidden="false" targetId="976a-52f7-8178-1507" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="2466-6414-c703-b222" name="Upgrades" hidden="false" collective="false" import="true" targetId="836f-bad9-26e7-7b30" type="selectionEntryGroup"/>
+        <entryLink id="4fb9-cdca-3c02-e073" name="Crew (4)" hidden="false" collective="false" import="true" targetId="ea6e-d90f-39db-177a" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="c525-9df6-1886-28e4" value="24.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="de5d-2e46-51b5-d231" name="M1 Abrams" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="4575-9070-fd1e-d142" name="M1 Abrams" hidden="false" typeId="d470-1387-e9b7-4e31" typeName="Tank">
+          <characteristics>
+            <characteristic name="Crew Slots" typeId="0ab1-226b-bc56-8d04">4</characteristic>
+            <characteristic name="Initiative" typeId="4bdf-d9ca-d63e-e9ae">8</characteristic>
+            <characteristic name="Attack" typeId="511c-4053-b96a-3393">4</characteristic>
+            <characteristic name="Defence" typeId="5aea-3707-f320-3b58">5</characteristic>
+            <characteristic name="Damage Capacity" typeId="b389-b659-b7d8-1dbe">7</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="4f34-9e36-2ee1-6efa" name="Advanced Stabiliser" hidden="false" targetId="966f-45ab-6ac3-c837" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="aa3d-6425-0e2c-4f3f" name="New CategoryLink" hidden="false" targetId="41cd-9622-6b80-1bc3" primary="true"/>
+        <categoryLink id="7e4c-b572-e045-3732" name="Abrams Tank" hidden="false" targetId="976a-52f7-8178-1507" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="98f9-5850-a5f7-1bce" name="Upgrades" hidden="false" collective="false" import="true" targetId="836f-bad9-26e7-7b30" type="selectionEntryGroup"/>
+        <entryLink id="f817-0515-c2dd-7981" name="Crew (4)" hidden="false" collective="false" import="true" targetId="ea6e-d90f-39db-177a" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="c525-9df6-1886-28e4" value="22.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="61e5-a91d-8bb0-db46" name="M1A1 Abrams" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="6c31-201c-9345-398b" name="M1A1 Abrams" hidden="false" typeId="d470-1387-e9b7-4e31" typeName="Tank">
+          <characteristics>
+            <characteristic name="Crew Slots" typeId="0ab1-226b-bc56-8d04">4</characteristic>
+            <characteristic name="Initiative" typeId="4bdf-d9ca-d63e-e9ae">8</characteristic>
+            <characteristic name="Attack" typeId="511c-4053-b96a-3393">5</characteristic>
+            <characteristic name="Defence" typeId="5aea-3707-f320-3b58">2</characteristic>
+            <characteristic name="Damage Capacity" typeId="b389-b659-b7d8-1dbe">9</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="b6e6-757d-0649-3ce4" name="Advanced Stabiliser" hidden="false" targetId="966f-45ab-6ac3-c837" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="a0e1-203c-a904-f3bc" name="New CategoryLink" hidden="false" targetId="41cd-9622-6b80-1bc3" primary="true"/>
+        <categoryLink id="391d-a5f4-d535-f535" name="Abrams Tank" hidden="false" targetId="976a-52f7-8178-1507" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="a673-7a90-b5b4-7008" name="Upgrades" hidden="false" collective="false" import="true" targetId="836f-bad9-26e7-7b30" type="selectionEntryGroup"/>
+        <entryLink id="b21f-f659-01d8-8be3" name="Crew (4)" hidden="false" collective="false" import="true" targetId="ea6e-d90f-39db-177a" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="c525-9df6-1886-28e4" value="32.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5cf1-3c56-8ea0-4050" name="M60 Patton" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="6d5d-8a56-2f1f-f6ed" name="M60 Patton" hidden="false" typeId="d470-1387-e9b7-4e31" typeName="Tank">
+          <characteristics>
+            <characteristic name="Crew Slots" typeId="0ab1-226b-bc56-8d04">4</characteristic>
+            <characteristic name="Initiative" typeId="4bdf-d9ca-d63e-e9ae">6</characteristic>
+            <characteristic name="Attack" typeId="511c-4053-b96a-3393">4</characteristic>
+            <characteristic name="Defence" typeId="5aea-3707-f320-3b58">1</characteristic>
+            <characteristic name="Damage Capacity" typeId="b389-b659-b7d8-1dbe">6</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="89d6-6ab3-53cc-74ee" name="Stabiliser" hidden="false" targetId="5624-e36f-1fe5-26f6" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="8f08-042b-dcb2-ed02" name="New CategoryLink" hidden="false" targetId="41cd-9622-6b80-1bc3" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="0c83-325e-3172-2cee" name="Upgrades" hidden="false" collective="false" import="true" targetId="836f-bad9-26e7-7b30" type="selectionEntryGroup"/>
+        <entryLink id="0896-0638-ae85-ae02" name="Crew (4)" hidden="false" collective="false" import="true" targetId="ea6e-d90f-39db-177a" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="c525-9df6-1886-28e4" value="14.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <rules>
+    <rule id="5e85-4571-2c49-c35f" name="Team Yankee" hidden="false">
+      <description>Sharpshooter: When attacking a Model that is not within Close Range, Models in this platoon may exchange up to one Critical Hit result for two Hit results.</description>
+    </rule>
+  </rules>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="f6cb-22e2-1c45-a873" name="Crew: Commander" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c7e6-0879-5985-566e" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="ca46-df0d-ef3c-1a46" name="• Sean Bannon" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5c6a-3ad0-54b2-6193" type="instanceOf"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" field="c525-9df6-1886-28e4" value="1.0">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="54a1-d682-1d08-1e4c" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="35dc-981e-b209-e404" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="3706-87ae-466f-870d" name="• Sean Bannon" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+              <characteristics>
+                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">Alpha 66
++3 Initiative, +1 Defence.
+This Tank may make a Final Fury attack at 0 Initiative even if it has already made an attack this turn.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="39dc-364d-4fa7-6191" name="Crew" hidden="false" targetId="5e8f-5e97-f0cf-b29a" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="c525-9df6-1886-28e4" value="7.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7a80-d1fd-f6b5-f79b" name="Marine Commander" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5c6a-3ad0-54b2-6193" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile id="77db-ec61-d91c-ab31" name="Marine Commander" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+              <characteristics>
+                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">+2 Initiative during the Movement Phase.
+When you Reveal this card, until the end of the turn this Model gains +1 Attack</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="69e5-a212-d89e-1435" name="Crew" hidden="false" targetId="5e8f-5e97-f0cf-b29a" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="c525-9df6-1886-28e4" value="3.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="2d03-066a-56e3-91fa" name="• Clarence Tucker" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5c6a-3ad0-54b2-6193" type="instanceOf"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3537-0416-30f7-2b6b" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5e2b-53cd-acde-4fc0" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="7370-acb1-4d4c-4a67" name="• Clarence Tucker" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+              <characteristics>
+                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">+1 Attack
+Reveal this card at the start of the Shooting Phase to gain +6 Initiative until the end of the turn.
+M109 ITV or M163 VADS Only</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="3dff-2110-61cf-090b" name="Crew" hidden="false" targetId="5e8f-5e97-f0cf-b29a" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="c525-9df6-1886-28e4" value="5.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="76d6-88f3-6cfa-0a32" name="• Joel Schrader" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5c6a-3ad0-54b2-6193" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="dce3-6e98-9bf9-7bec" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="4531-4ef3-57c3-3d45" name="• Joel Schrader" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+              <characteristics>
+                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">M60 Patton and LAV Tanks in this Platoon get +2 Initiative in the Shooting Phase.
+When you Reveal this card, this Model gains +2 Attack and -1 Defence until the end of the turn.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="5b48-2524-2039-b1cb" name="Tank" hidden="false" targetId="41cd-9622-6b80-1bc3" primary="false"/>
+            <categoryLink id="ae26-a503-b4e3-b23b" name="Crew" hidden="false" targetId="5e8f-5e97-f0cf-b29a" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="c525-9df6-1886-28e4" value="6.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="a5d2-52ae-fbb0-54af" name="• William &apos;Buck&apos; Taylor" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5c6a-3ad0-54b2-6193" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6e29-1a59-9ee5-e9f8" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="d01d-596c-de30-7e5c" name="• William &apos;Buck&apos; Taylor" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+              <characteristics>
+                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">+1 Attack.
+Abrams Tanks in this Platoon gain +1 Initiative.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="c525-9df6-1886-28e4" value="6.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="9bc1-e0f1-8e5f-1989" name="Aggressive Commander" hidden="false" collective="false" import="true" targetId="c5e9-fce0-b808-8295" type="selectionEntry"/>
+        <entryLink id="0484-9ba4-ee22-bcc3" name="Cunning Commander" hidden="false" collective="false" import="true" targetId="970e-6750-8ea5-0169" type="selectionEntry"/>
+        <entryLink id="46df-4377-b7f4-1b16" name="Altruistic Commander" hidden="false" collective="false" import="true" targetId="a9bf-5adc-d225-0604" type="selectionEntry"/>
+        <entryLink id="bf67-6993-7654-b9f7" name="Superb Commander" hidden="false" collective="false" import="true" targetId="4de4-d2e9-40af-d8e1" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="259e-d009-c906-3c9e" name="Crew: Driver" hidden="false" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5c6a-3ad0-54b2-6193" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b7c-6e87-1f7f-9051" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="dc33-44a2-cf65-9438" name="• Joseph Ortelli" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="decrement" field="c525-9df6-1886-28e4" value="1.0">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="54a1-d682-1d08-1e4c" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="756c-915f-2cce-3213" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="2756-b6e6-7f0b-c54e" name="Joseph Ortelli" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+              <characteristics>
+                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">Alpha 66
++2 Initiative during the Movement Phase. While this Tank has a Speed token, enemy Models at Close Range have -1 Atttack when Shooting at this Tank.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="e862-ce65-f19b-fc30" name="Crew" hidden="false" targetId="5e8f-5e97-f0cf-b29a" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="c525-9df6-1886-28e4" value="4.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="5356-b8f9-79b8-e17a" name="• Red Ferguson" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6b57-991f-f103-1e5d" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="63f7-a5e1-484c-f387" name="• Red Ferguson" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+              <characteristics>
+                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">+1 Initiative.
+Instead of moving, this Tank may make a Repair Check, after making the check place a Speed 1 token next to this Tank.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="4840-7898-be8a-b51d" name="Crew" hidden="false" targetId="5e8f-5e97-f0cf-b29a" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="c525-9df6-1886-28e4" value="2.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7cbc-915c-bae3-39f5" name="Clever Mechanic" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="91b9-6f4c-72b9-43e1" name="Clever Mechanic" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+              <characteristics>
+                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">+1 Initiative in the Movement Phase.
+When defending you may discard one Upgrade card on this Tank, if you do you may re-roll up to two Defence dice.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="c10b-2786-85f1-3e74" name="Crew" hidden="false" targetId="5e8f-5e97-f0cf-b29a" primary="false"/>
+            <categoryLink id="dca6-0b2e-50b3-ef64" name="Tank" hidden="false" targetId="41cd-9622-6b80-1bc3" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="c525-9df6-1886-28e4" value="2.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="b68f-7b4b-1772-c137" name="Cunning Driver" hidden="false" collective="false" import="true" targetId="ba72-10e7-e307-1715" type="selectionEntry"/>
+        <entryLink id="2ec7-313d-22cf-588b" name="Defensive Driver" hidden="false" collective="false" import="true" targetId="6b53-6bb8-bdd0-daa6" type="selectionEntry"/>
+        <entryLink id="2c81-7b00-4f62-36ee" name="Risky Driver" hidden="false" collective="false" import="true" targetId="dc10-b057-f0bc-35ca" type="selectionEntry"/>
+        <entryLink id="d863-7777-41b7-b738" name="Racing Driver" hidden="false" collective="false" import="true" targetId="614d-c13f-c440-fe7c" type="selectionEntry"/>
+        <entryLink id="5734-3902-dd93-6061" name="Determined Driver" hidden="false" collective="false" import="true" targetId="5a8f-2126-db5e-9d43" type="selectionEntry"/>
+        <entryLink id="93f0-be3f-bca1-c067" name="Daring Driver" hidden="false" collective="false" import="true" targetId="66f8-3ce6-9d18-98c9" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="e48a-923a-5dfb-6aa4" name="Crew: Gunner" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="66f2-3a67-2b22-b23d" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="66ef-7bf4-4994-39ca" name="• Robert Folk" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5c6a-3ad0-54b2-6193" type="instanceOf"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" field="c525-9df6-1886-28e4" value="1.0">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="54a1-d682-1d08-1e4c" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2a33-9c83-2c66-06ba" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="65ea-c01e-6e91-ad92" name="Robert Folk" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+              <characteristics>
+                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">Alpha 66
++1 Attack.
+After this Tank takes damage, roll a single die. On a roll of 5 or 6 the attacking Model takes one point of damage.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="a892-7731-8c1a-64d7" name="Crew" hidden="false" targetId="5e8f-5e97-f0cf-b29a" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="c525-9df6-1886-28e4" value="6.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="af34-871d-dc55-b990" name="Bloodthirsty Gunner" hidden="false" collective="false" import="true" targetId="d220-50e8-cf29-d3c2" type="selectionEntry"/>
+        <entryLink id="d8d7-9af2-65fb-a649" name="Asassin" hidden="false" collective="false" import="true" targetId="1bbb-b3af-215c-9e6c" type="selectionEntry"/>
+        <entryLink id="f4f1-5aed-eb6a-8cdf" name="Risky Gunner" hidden="false" collective="false" import="true" targetId="c697-789d-b470-3aa1" type="selectionEntry"/>
+        <entryLink id="62db-ac31-7ee5-edcc" name="Dead-Eye Gunner" hidden="false" collective="false" import="true" targetId="39f9-6a23-90c6-c4a4" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="70f8-5553-759f-6635" name="Crew: Loader" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4073-589a-6dd4-0c3c" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="7c90-992d-5a18-4f40" name="• Richard Kelp" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5c6a-3ad0-54b2-6193" type="instanceOf"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" field="c525-9df6-1886-28e4" value="1.0">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="54a1-d682-1d08-1e4c" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="cddb-a62f-bf7f-8097" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="976a-5e69-29e7-2d2d" name="Richard Kelp" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+              <characteristics>
+                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">Alpha 66
++2 Initiative during the Shooting Phase.
+When this Tank is rolling Attack Dice, results of 3 also count as a Hit while you are targeting a Model at Close Range.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="090b-6c45-c88b-cb85" name="Crew" hidden="false" targetId="5e8f-5e97-f0cf-b29a" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="c525-9df6-1886-28e4" value="4.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="eea2-7985-411b-5b76" name="True Boy Scout" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5c6a-3ad0-54b2-6193" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile id="67e5-b7d8-6520-4037" name="True Boy Scout" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+              <characteristics>
+                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">+1 Initiative  during the Movement Phase.
+This Tank may have two difference Equipment Upgrade cards.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="c525-9df6-1886-28e4" value="1.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="f863-c2b3-4dec-40fa" name="Aggressive Loader" hidden="false" collective="false" import="true" targetId="9f4e-3567-50d5-20f0" type="selectionEntry"/>
+        <entryLink id="443c-d19d-ff12-e3ce" name="Duck Hunter" hidden="false" collective="false" import="true" targetId="8bc9-7eae-bd10-0a44" type="selectionEntry"/>
+        <entryLink id="be5d-844f-d41f-beba" name="Clever Loader" hidden="false" collective="false" import="true" targetId="da2d-5769-5589-3b41" type="selectionEntry"/>
+        <entryLink id="36aa-9beb-2db6-4388" name="Precise Loader" hidden="false" collective="false" import="true" targetId="f0a0-67dd-0911-c8f0" type="selectionEntry"/>
+        <entryLink id="726b-ad24-033e-01be" name="Resourceful Loader" hidden="false" collective="false" import="true" targetId="ab01-8e90-8b69-a5dc" type="selectionEntry"/>
+        <entryLink id="b45b-ca5a-9f69-de42" name="Hasty Loader" hidden="false" collective="false" import="true" targetId="49d5-7a1b-0152-a2be" type="selectionEntry"/>
+        <entryLink id="ee2f-66bc-830c-0b14" name="Focused Loader" hidden="false" collective="false" import="true" targetId="2cde-3c3e-af82-feeb" type="selectionEntry"/>
+        <entryLink id="3e61-9727-0408-1025" name="Risky Loader" hidden="false" collective="false" import="true" targetId="d665-4611-e2b5-ac12" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="5165-a862-b482-3239" name="Crew: Pilot" hidden="false" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="41cd-9622-6b80-1bc3" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5bc2-ea25-d289-f9ff" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="47a9-c1d7-b4a8-e9bc" name="Daring Pilot" hidden="false" collective="false" import="true" targetId="e371-86a4-ba44-591b" type="selectionEntry"/>
+        <entryLink id="52bb-9253-784b-b38a" name="Cunning Pilot" hidden="false" collective="false" import="true" targetId="a264-38a1-d73f-2849" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="9e4e-8995-e3f4-5150" name="Upgrade: Ammo" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5558-6072-908c-e4ae" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="6804-e80f-ffea-eae7" name="Silver Bullet" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="976a-52f7-8178-1507" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile id="f532-5271-e65a-a31a" name="Silver Bullet" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+              <characteristics>
+                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">Abrams Tank Only.
+Discard to gain +1 Attack</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="c525-9df6-1886-28e4" value="2.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="9249-1806-761f-305a" name="Extra Ammunition" hidden="false" collective="false" import="true" targetId="403f-2bba-fe47-a8fd" type="selectionEntry"/>
+        <entryLink id="3ed7-b177-d58f-225c" name="MANPADS" hidden="false" collective="false" import="true" targetId="a3a1-0028-e9d8-8d03" type="selectionEntry"/>
+        <entryLink id="29c2-94e2-62c0-e4fe" name="Willie Pete" hidden="false" collective="false" import="true" targetId="2232-a799-9abe-c10e" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="336c-9f52-70fa-236a" name="Upgrade: Armour" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0d62-89cc-b542-b9ee" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="d86e-078a-7601-4db1" name="Applique Armour" hidden="false" collective="false" import="true" targetId="953b-342b-8661-b56a" type="selectionEntry"/>
+        <entryLink id="7f86-161a-f558-8c92" name="ERA" hidden="false" collective="false" import="true" targetId="59f8-958c-5eba-1490" type="selectionEntry"/>
+        <entryLink id="47a4-a945-a15d-a7e7" name="Improvised Armour" hidden="false" collective="false" import="true" targetId="b638-3d05-fe3f-f654" type="selectionEntry"/>
+        <entryLink id="e401-24ac-448c-0c8d" name="Camouflage Netting" hidden="false" collective="false" import="true" targetId="b458-54cf-f6cd-f0bf" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="def7-206b-8ded-3c14" name="Upgrade: Doctrine" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="30f1-526e-e567-d635" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="d7eb-3242-6d32-d1b2" name="Alpha 66" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="976a-52f7-8178-1507" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0987-14f8-5235-5a10" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="cdef-7371-8c21-a32c" name="Alpha 66" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+              <characteristics>
+                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">Cards with the Alpha 66 Keyword cost -1 point to assign to this Tank and start the game Revealed.
+Discard this card to cancel an Injured Crew or Bailed Out effect.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="b2c2-3a28-f3bc-6f31" name="Alpha 66" hidden="false" targetId="54a1-d682-1d08-1e4c" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="c525-9df6-1886-28e4" value="1.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="03bd-56b6-824b-736f" name="Ambush" hidden="false" collective="false" import="true" targetId="0ded-728f-257d-e86b" type="selectionEntry"/>
+        <entryLink id="686f-8aa2-1a28-89e2" name="Spearhead" hidden="false" collective="false" import="true" targetId="13ff-05dd-2e9f-6b25" type="selectionEntry"/>
+        <entryLink id="ebf7-7de0-88c3-986f" name="Defensive Manoeuvres" hidden="false" collective="false" import="true" targetId="844e-199b-b198-8e61" type="selectionEntry"/>
+        <entryLink id="21f3-905a-29d3-cd00" name="Adaptive" hidden="false" collective="false" import="true" targetId="d7fe-c30d-14b7-0291" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="aa30-3c28-6a16-aa07" name="Upgrade: Engine" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a33e-284a-7874-9872" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="7914-8d46-09bb-dc0f" name="Supercharger" hidden="false" collective="false" import="true" targetId="71db-7d11-86a2-4296" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="de88-9645-2bd2-e8a8" name="Upgrade: Equipment" hidden="false" collective="false" import="true">
+      <modifiers>
+        <modifier type="increment" field="7195-e9ee-728a-635e" value="1.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="eea2-7985-411b-5b76" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7195-e9ee-728a-635e" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="9793-d5a0-d96d-1950" name="Countermeasures" hidden="false" collective="false" import="true" targetId="06fd-547c-7764-5b1c" type="selectionEntry"/>
+        <entryLink id="fa61-3a9d-f497-2b02" name="Protected Ammo" hidden="false" collective="false" import="true" targetId="3814-af75-83b0-632a" type="selectionEntry"/>
+        <entryLink id="bcc3-8056-2081-29ed" name="Fire Extinguisher" hidden="false" collective="false" import="true" targetId="4020-3d81-fe52-ba0a" type="selectionEntry"/>
+        <entryLink id="ab78-ec77-b122-bea9" name="Medical Kit" hidden="false" collective="false" import="true" targetId="ae2d-5b38-4ea3-e35b" type="selectionEntry"/>
+        <entryLink id="1b3e-4a09-4e84-8376" name="Liquid Courage" hidden="false" collective="false" import="true" targetId="a99e-2f69-43e6-6154" type="selectionEntry"/>
+        <entryLink id="b4f9-736d-17e2-a165" name="Tool Kit" hidden="false" collective="false" import="true" targetId="0c4d-783c-ef4d-71d7" type="selectionEntry"/>
+        <entryLink id="b483-9577-b0d1-6f6e" name="Bigger Hammer" hidden="false" collective="false" import="true" targetId="009e-e519-58f4-54ca" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="836f-bad9-26e7-7b30" name="Upgrades" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="4271-e0ba-9f01-ee66" name="Upgrade: Ammo" hidden="false" collective="false" import="true" targetId="9e4e-8995-e3f4-5150" type="selectionEntryGroup"/>
+        <entryLink id="d99b-e5a1-f94b-a32b" name="Upgrade: Engine" hidden="false" collective="false" import="true" targetId="aa30-3c28-6a16-aa07" type="selectionEntryGroup"/>
+        <entryLink id="d41d-9da6-772e-a001" name="Upgrade: Doctrine" hidden="false" collective="false" import="true" targetId="def7-206b-8ded-3c14" type="selectionEntryGroup"/>
+        <entryLink id="5f55-27b1-d834-5b29" name="Upgrade: Equipment" hidden="false" collective="false" import="true" targetId="de88-9645-2bd2-e8a8" type="selectionEntryGroup"/>
+        <entryLink id="b1c6-da43-1f5b-881f" name="Upgrade: Armour" hidden="false" collective="false" import="true" targetId="336c-9f52-70fa-236a" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="4c36-38d4-1b24-5162" name="Crew (2)" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="26f2-8dfb-a4fe-77ef" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="7342-d560-b930-7d1b" name="Crew: Commander" hidden="false" collective="false" import="true" targetId="f6cb-22e2-1c45-a873" type="selectionEntryGroup"/>
+        <entryLink id="4d60-8d47-1132-209b" name="Crew: Driver" hidden="false" collective="false" import="true" targetId="259e-d009-c906-3c9e" type="selectionEntryGroup"/>
+        <entryLink id="14fb-a0b0-a58e-5116" name="Crew: Gunner" hidden="false" collective="false" import="true" targetId="e48a-923a-5dfb-6aa4" type="selectionEntryGroup"/>
+        <entryLink id="4ad2-8f8b-32e5-b313" name="Crew: Pilot" hidden="false" collective="false" import="true" targetId="5165-a862-b482-3239" type="selectionEntryGroup"/>
+        <entryLink id="db57-bd83-96c4-7323" name="Crew: Loader" hidden="false" collective="false" import="true" targetId="70f8-5553-759f-6635" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="ea6e-d90f-39db-177a" name="Crew (4)" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5682-4aa6-da01-fab5" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="7a79-5630-c357-7ece" name="Crew: Commander" hidden="false" collective="false" import="true" targetId="f6cb-22e2-1c45-a873" type="selectionEntryGroup"/>
+        <entryLink id="1840-4a16-85aa-82a2" name="Crew: Driver" hidden="false" collective="false" import="true" targetId="259e-d009-c906-3c9e" type="selectionEntryGroup"/>
+        <entryLink id="a832-c6fc-e1ba-01fc" name="Crew: Gunner" hidden="false" collective="false" import="true" targetId="e48a-923a-5dfb-6aa4" type="selectionEntryGroup"/>
+        <entryLink id="cfc0-aba3-2906-53f8" name="Crew: Pilot" hidden="false" collective="false" import="true" targetId="5165-a862-b482-3239" type="selectionEntryGroup"/>
+        <entryLink id="4bf4-1f39-d314-9767" name="Crew: Loader" hidden="false" collective="false" import="true" targetId="70f8-5553-759f-6635" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="3fb5-adf7-223b-9ab7" name="Crew (3)" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b917-36dc-f36e-c3f7" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="7eed-5446-1d72-4b01" name="Crew: Commander" hidden="false" collective="false" import="true" targetId="f6cb-22e2-1c45-a873" type="selectionEntryGroup"/>
+        <entryLink id="bf1c-52bd-b551-a4d7" name="Crew: Driver" hidden="false" collective="false" import="true" targetId="259e-d009-c906-3c9e" type="selectionEntryGroup"/>
+        <entryLink id="a9f5-b32e-9d25-b6f3" name="Crew: Gunner" hidden="false" collective="false" import="true" targetId="e48a-923a-5dfb-6aa4" type="selectionEntryGroup"/>
+        <entryLink id="fef7-86f1-78b4-3d16" name="Crew: Pilot" hidden="false" collective="false" import="true" targetId="5165-a862-b482-3239" type="selectionEntryGroup"/>
+        <entryLink id="d64e-b5e6-5df7-6f15" name="Crew: Loader" hidden="false" collective="false" import="true" targetId="70f8-5553-759f-6635" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+</catalogue>

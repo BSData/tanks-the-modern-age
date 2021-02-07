@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="e6d7-c9d6-1f46-19ee" name="French" revision="1" battleScribeVersion="2.03" authorName="Jason Bardey" library="false" gameSystemId="c4ca-1ece-ac34-246b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="122c-ff0d-ab5c-65f3" name="AMX-10P" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="c877-0709-bf59-57dd" name="AMX-10P" hidden="false" typeId="d470-1387-e9b7-4e31" typeName="Tank">
+          <characteristics>
+            <characteristic name="Crew Slots" typeId="0ab1-226b-bc56-8d04">3</characteristic>
+            <characteristic name="Initiative" typeId="4bdf-d9ca-d63e-e9ae">7</characteristic>
+            <characteristic name="Attack" typeId="511c-4053-b96a-3393">2</characteristic>
+            <characteristic name="Defence" typeId="5aea-3707-f320-3b58">0</characteristic>
+            <characteristic name="Damage Capacity" typeId="b389-b659-b7d8-1dbe">3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="c425-5d04-3181-b309" name="Rapid Fire (X)" hidden="false" targetId="0406-4110-1519-7897" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Rapid Fire (5)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="d168-8ae2-bd88-e028" name="Scout" hidden="false" targetId="d441-5387-0036-2dab" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="aefc-0fc5-5ebc-71b5" name="Tank" hidden="false" targetId="41cd-9622-6b80-1bc3" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="8d31-b65e-4dad-8d2f" name="Upgrades" hidden="false" collective="false" import="true" targetId="55cb-d9ad-23a4-01cc" type="selectionEntryGroup"/>
+        <entryLink id="9ed1-c2aa-9ea6-36ff" name="Crew (3)" hidden="false" collective="false" import="true" targetId="f238-7c60-c347-00fb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="c525-9df6-1886-28e4" value="11.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b8c4-0934-6028-9dc4" name="Gazelle (HOT)" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="530f-aeaa-9b32-0613" name="Gazelle (HOT)" hidden="false" typeId="451c-01d4-9710-cb24" typeName="Helicopter">
+          <characteristics>
+            <characteristic name="Crew Slots" typeId="bf6f-f512-5674-b503">2</characteristic>
+            <characteristic name="Initiative" typeId="e219-982f-5433-3abd">7</characteristic>
+            <characteristic name="Attack" typeId="4e57-cebc-8da6-d530">0</characteristic>
+            <characteristic name="Defence" typeId="020f-df40-e821-e102">3</characteristic>
+            <characteristic name="Damage Capacity" typeId="ed1d-6e05-2aa0-3a02">3</characteristic>
+            <characteristic name="Ammo Slots" typeId="328e-bbfc-bbb0-fb1e">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="04c0-ee55-7c5c-8e86" name="Missiles (X)" hidden="false" targetId="726c-f879-474a-444f" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Missiles (5)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="e7f3-69f2-4dfe-f335" name="Helicopter" hidden="false" targetId="5c6a-3ad0-54b2-6193" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="d30e-e098-40fe-a6ec" name="Upgrades" hidden="false" collective="false" import="true" targetId="55cb-d9ad-23a4-01cc" type="selectionEntryGroup"/>
+        <entryLink id="eec4-4ce3-49cc-9d88" name="Crew (2)" hidden="false" collective="false" import="true" targetId="62b6-0f6c-6da4-7447" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="c525-9df6-1886-28e4" value="23.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="98d0-2b6a-f833-63d7" name="Gazelle (20mm)" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="16ba-3f39-9c30-140e" name="Gazelle (20mm)" hidden="false" typeId="451c-01d4-9710-cb24" typeName="Helicopter">
+          <characteristics>
+            <characteristic name="Crew Slots" typeId="bf6f-f512-5674-b503">2</characteristic>
+            <characteristic name="Initiative" typeId="e219-982f-5433-3abd">10</characteristic>
+            <characteristic name="Attack" typeId="4e57-cebc-8da6-d530">2</characteristic>
+            <characteristic name="Defence" typeId="020f-df40-e821-e102">3</characteristic>
+            <characteristic name="Damage Capacity" typeId="ed1d-6e05-2aa0-3a02">3</characteristic>
+            <characteristic name="Ammo Slots" typeId="328e-bbfc-bbb0-fb1e">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="c7c9-aa35-4d9e-7f15" name="Rapid Fire (X)" hidden="false" targetId="0406-4110-1519-7897" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Rapid Fire (5)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="24f3-33d5-d890-5f2b" name="Helicopter" hidden="false" targetId="5c6a-3ad0-54b2-6193" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="cc1b-26a4-ffe5-c7bd" name="Upgrades" hidden="false" collective="false" import="true" targetId="55cb-d9ad-23a4-01cc" type="selectionEntryGroup"/>
+        <entryLink id="0297-d9c6-1de1-a1c0" name="Crew (2)" hidden="false" collective="false" import="true" targetId="62b6-0f6c-6da4-7447" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="c525-9df6-1886-28e4" value="21.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bdfe-b610-689d-8498" name=" AMX-30" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="26d1-6c94-29d4-6b0c" name=" AMX-30" hidden="false" typeId="d470-1387-e9b7-4e31" typeName="Tank">
+          <characteristics>
+            <characteristic name="Crew Slots" typeId="0ab1-226b-bc56-8d04">4</characteristic>
+            <characteristic name="Initiative" typeId="4bdf-d9ca-d63e-e9ae">6</characteristic>
+            <characteristic name="Attack" typeId="511c-4053-b96a-3393">4</characteristic>
+            <characteristic name="Defence" typeId="5aea-3707-f320-3b58">1</characteristic>
+            <characteristic name="Damage Capacity" typeId="b389-b659-b7d8-1dbe">5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="ddd0-c863-8ff0-ee08" name="Rapid Fire (X)" hidden="false" targetId="0406-4110-1519-7897" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Rapid Fire (5)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="890e-4004-0a0e-581b" name="Tank" hidden="false" targetId="41cd-9622-6b80-1bc3" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="f110-1028-230d-82c5" name="Upgrades" hidden="false" collective="false" import="true" targetId="55cb-d9ad-23a4-01cc" type="selectionEntryGroup"/>
+        <entryLink id="4253-a0a9-0a10-7728" name="Crew (4)" hidden="false" collective="false" import="true" targetId="1883-c544-ae47-9881" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="c525-9df6-1886-28e4" value="13.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ab75-f101-66f6-ba78" name="AMX-AUF1" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="8328-e627-aff2-aa9b" name="AMX-AUF1" hidden="false" typeId="d470-1387-e9b7-4e31" typeName="Tank">
+          <characteristics>
+            <characteristic name="Crew Slots" typeId="0ab1-226b-bc56-8d04">4</characteristic>
+            <characteristic name="Initiative" typeId="4bdf-d9ca-d63e-e9ae">1</characteristic>
+            <characteristic name="Attack" typeId="511c-4053-b96a-3393">4</characteristic>
+            <characteristic name="Defence" typeId="5aea-3707-f320-3b58">0</characteristic>
+            <characteristic name="Damage Capacity" typeId="b389-b659-b7d8-1dbe">3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="ccd3-6662-32fd-b42c" name="Artillery" hidden="false" targetId="3d34-3eb0-f6e1-0e52" type="rule"/>
+        <infoLink id="3aec-7d96-812f-64e1" name="Brutal" hidden="false" targetId="4efa-29ad-9553-cd34" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="a2dc-4f2e-428c-b62c" name="Tank" hidden="false" targetId="41cd-9622-6b80-1bc3" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="540f-33ec-5c0c-320e" name="Upgrades" hidden="false" collective="false" import="true" targetId="55cb-d9ad-23a4-01cc" type="selectionEntryGroup"/>
+        <entryLink id="c302-545d-5f94-1b6a" name="Crew (4)" hidden="false" collective="false" import="true" targetId="1883-c544-ae47-9881" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="c525-9df6-1886-28e4" value="10.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <rules>
+    <rule id="3582-cdb5-fc3f-953e" name="Cuirassier Squadron" hidden="false">
+      <description>Outmanoeuvre: When a Model in this Platoon takes a Side Shot against an enemy Model, it gains +1 Attack/</description>
+    </rule>
+  </rules>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="d959-1d4f-70df-eb2f" name="Crew: Commander" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f53-cdd2-cc5e-2731" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="d8bf-507f-f153-f8f3" name="Aggressive Commander" hidden="false" collective="false" import="true" targetId="c5e9-fce0-b808-8295" type="selectionEntry"/>
+        <entryLink id="a288-8e46-d0ba-6884" name="Cunning Commander" hidden="false" collective="false" import="true" targetId="970e-6750-8ea5-0169" type="selectionEntry"/>
+        <entryLink id="5ce5-b42c-d6b5-e8a9" name="Altruistic Commander" hidden="false" collective="false" import="true" targetId="a9bf-5adc-d225-0604" type="selectionEntry"/>
+        <entryLink id="880d-462e-f692-ba20" name="Superb Commander" hidden="false" collective="false" import="true" targetId="4de4-d2e9-40af-d8e1" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="0a5c-ca78-3e2c-d57a" name="Crew: Driver" hidden="false" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5c6a-3ad0-54b2-6193" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f1e-5d63-fe74-f335" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="bbfd-bda1-d340-309d" name="Cunning Driver" hidden="false" collective="false" import="true" targetId="ba72-10e7-e307-1715" type="selectionEntry"/>
+        <entryLink id="f384-c509-f294-179f" name="Defensive Driver" hidden="false" collective="false" import="true" targetId="6b53-6bb8-bdd0-daa6" type="selectionEntry"/>
+        <entryLink id="857a-a02c-4b5f-5654" name="Risky Driver" hidden="false" collective="false" import="true" targetId="dc10-b057-f0bc-35ca" type="selectionEntry"/>
+        <entryLink id="08e3-59a1-5537-66de" name="Racing Driver" hidden="false" collective="false" import="true" targetId="614d-c13f-c440-fe7c" type="selectionEntry"/>
+        <entryLink id="cce4-ab7e-a983-f7da" name="Determined Driver" hidden="false" collective="false" import="true" targetId="5a8f-2126-db5e-9d43" type="selectionEntry"/>
+        <entryLink id="b60d-455f-e38c-ad98" name="Daring Driver" hidden="false" collective="false" import="true" targetId="66f8-3ce6-9d18-98c9" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="1505-4eb4-bd49-0310" name="Crew: Gunner" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a15-2b83-b2d6-30eb" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="a035-7cec-c048-6cad" name="Bloodthirsty Gunner" hidden="false" collective="false" import="true" targetId="d220-50e8-cf29-d3c2" type="selectionEntry"/>
+        <entryLink id="acc5-57b9-9ef6-de67" name="Asassin" hidden="false" collective="false" import="true" targetId="1bbb-b3af-215c-9e6c" type="selectionEntry"/>
+        <entryLink id="cbfd-463f-781f-548c" name="Risky Gunner" hidden="false" collective="false" import="true" targetId="c697-789d-b470-3aa1" type="selectionEntry"/>
+        <entryLink id="8796-b37a-6be6-4cbd" name="Dead-Eye Gunner" hidden="false" collective="false" import="true" targetId="39f9-6a23-90c6-c4a4" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="aad4-3371-37ee-0bf1" name="Crew: Loader" hidden="false" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5c6a-3ad0-54b2-6193" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="130e-8c43-cd93-6359" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="32e3-fa1f-03b0-5e03" name="Aggressive Loader" hidden="false" collective="false" import="true" targetId="9f4e-3567-50d5-20f0" type="selectionEntry"/>
+        <entryLink id="eec3-682a-8f9f-02b0" name="Duck Hunter" hidden="false" collective="false" import="true" targetId="8bc9-7eae-bd10-0a44" type="selectionEntry"/>
+        <entryLink id="47ff-0008-cac0-f8dc" name="Clever Loader" hidden="false" collective="false" import="true" targetId="da2d-5769-5589-3b41" type="selectionEntry"/>
+        <entryLink id="bd48-e5c1-34aa-f38e" name="Precise Loader" hidden="false" collective="false" import="true" targetId="f0a0-67dd-0911-c8f0" type="selectionEntry"/>
+        <entryLink id="352d-366f-b901-e22e" name="Resourceful Loader" hidden="false" collective="false" import="true" targetId="ab01-8e90-8b69-a5dc" type="selectionEntry"/>
+        <entryLink id="de0f-313f-9250-0da4" name="Hasty Loader" hidden="false" collective="false" import="true" targetId="49d5-7a1b-0152-a2be" type="selectionEntry"/>
+        <entryLink id="70b6-9ced-f461-18be" name="Focused Loader" hidden="false" collective="false" import="true" targetId="2cde-3c3e-af82-feeb" type="selectionEntry"/>
+        <entryLink id="43ec-0b34-2f8b-dc73" name="Risky Loader" hidden="false" collective="false" import="true" targetId="d665-4611-e2b5-ac12" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="4a2f-210c-a6a6-f548" name="Crew: Pilot" hidden="false" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="41cd-9622-6b80-1bc3" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6325-d94b-1a15-9d4c" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="6e95-967b-be14-adaf" name="Daring Pilot" hidden="false" collective="false" import="true" targetId="e371-86a4-ba44-591b" type="selectionEntry"/>
+        <entryLink id="7ef9-2785-36e8-93a4" name="Cunning Pilot" hidden="false" collective="false" import="true" targetId="a264-38a1-d73f-2849" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="bca8-9119-14d1-ae95" name="Upgrade: Ammo" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0484-e23c-40b2-bb61" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="3626-f529-a0f8-d7ab" name="Extra Ammunition" hidden="false" collective="false" import="true" targetId="403f-2bba-fe47-a8fd" type="selectionEntry"/>
+        <entryLink id="084e-2202-3e13-c833" name="MANPADS" hidden="false" collective="false" import="true" targetId="a3a1-0028-e9d8-8d03" type="selectionEntry"/>
+        <entryLink id="18d6-b27e-6508-d511" name="Willie Pete" hidden="false" collective="false" import="true" targetId="2232-a799-9abe-c10e" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="1dcb-3808-e57d-35e1" name="Upgrade: Armour" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="13c1-c56a-ec2a-8619" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="5a16-e996-b0f4-26da" name="Applique Armour" hidden="false" collective="false" import="true" targetId="953b-342b-8661-b56a" type="selectionEntry"/>
+        <entryLink id="b6a9-6f21-3054-954a" name="ERA" hidden="false" collective="false" import="true" targetId="59f8-958c-5eba-1490" type="selectionEntry"/>
+        <entryLink id="201c-2350-9cfa-7d84" name="Improvised Armour" hidden="false" collective="false" import="true" targetId="b638-3d05-fe3f-f654" type="selectionEntry"/>
+        <entryLink id="2de8-d4ac-c0b7-0095" name="Camouflage Netting" hidden="false" collective="false" import="true" targetId="b458-54cf-f6cd-f0bf" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="f918-ec6c-7549-31f1" name="Upgrade: Doctrine" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b4ed-5b2c-fe33-14b3" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="0d51-699b-d7b1-5519" name="Ambush" hidden="false" collective="false" import="true" targetId="0ded-728f-257d-e86b" type="selectionEntry"/>
+        <entryLink id="76cb-7c4f-72ee-fcf2" name="Spearhead" hidden="false" collective="false" import="true" targetId="13ff-05dd-2e9f-6b25" type="selectionEntry"/>
+        <entryLink id="b211-27b9-f8ce-74ff" name="Defensive Manoeuvres" hidden="false" collective="false" import="true" targetId="844e-199b-b198-8e61" type="selectionEntry"/>
+        <entryLink id="49a8-7a37-2145-2efc" name="Adaptive" hidden="false" collective="false" import="true" targetId="d7fe-c30d-14b7-0291" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="4b58-16a6-4181-5f63" name="Upgrade: Engine" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cee7-4e40-25af-a848" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="3cd6-291e-9c85-62bf" name="Supercharger" hidden="false" collective="false" import="true" targetId="71db-7d11-86a2-4296" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="51ab-9275-8a9f-feb7" name="Upgrade: Equipment" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3065-87eb-3552-f70d" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="4731-3980-4af2-587c" name="Countermeasures" hidden="false" collective="false" import="true" targetId="06fd-547c-7764-5b1c" type="selectionEntry"/>
+        <entryLink id="799c-c361-ef31-9d19" name="Protected Ammo" hidden="false" collective="false" import="true" targetId="3814-af75-83b0-632a" type="selectionEntry"/>
+        <entryLink id="ed46-3daf-4635-d6b7" name="Fire Extinguisher" hidden="false" collective="false" import="true" targetId="4020-3d81-fe52-ba0a" type="selectionEntry"/>
+        <entryLink id="1f76-fe4f-4b5f-a4c7" name="Medical Kit" hidden="false" collective="false" import="true" targetId="ae2d-5b38-4ea3-e35b" type="selectionEntry"/>
+        <entryLink id="bdc1-bb59-21b4-7c81" name="Liquid Courage" hidden="false" collective="false" import="true" targetId="a99e-2f69-43e6-6154" type="selectionEntry"/>
+        <entryLink id="c593-9cd6-f1d4-d974" name="Tool Kit" hidden="false" collective="false" import="true" targetId="0c4d-783c-ef4d-71d7" type="selectionEntry"/>
+        <entryLink id="d9ff-cb93-b7b2-76ec" name="Bigger Hammer" hidden="false" collective="false" import="true" targetId="009e-e519-58f4-54ca" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="55cb-d9ad-23a4-01cc" name="Upgrades" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="7ea1-73ef-6610-7568" name="Upgrade: Ammo" hidden="false" collective="false" import="true" targetId="bca8-9119-14d1-ae95" type="selectionEntryGroup"/>
+        <entryLink id="16c8-19a3-9695-de1f" name="Upgrade: Equipment" hidden="false" collective="false" import="true" targetId="51ab-9275-8a9f-feb7" type="selectionEntryGroup"/>
+        <entryLink id="e221-5f54-8e0e-c0e9" name="Upgrade: Armour" hidden="false" collective="false" import="true" targetId="1dcb-3808-e57d-35e1" type="selectionEntryGroup"/>
+        <entryLink id="2290-402f-d957-414e" name="Upgrade: Engine" hidden="false" collective="false" import="true" targetId="4b58-16a6-4181-5f63" type="selectionEntryGroup"/>
+        <entryLink id="84b1-bdee-b10b-0e20" name="Upgrade: Doctrine" hidden="false" collective="false" import="true" targetId="f918-ec6c-7549-31f1" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="62b6-0f6c-6da4-7447" name="Crew (2)" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf06-280b-bccc-c326" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="da00-e8bc-394e-8409" name="Crew: Commander" hidden="false" collective="false" import="true" targetId="d959-1d4f-70df-eb2f" type="selectionEntryGroup"/>
+        <entryLink id="370e-f5e4-f906-fd4e" name="Crew: Driver" hidden="false" collective="false" import="true" targetId="0a5c-ca78-3e2c-d57a" type="selectionEntryGroup"/>
+        <entryLink id="aa0c-4b26-8a2a-5700" name="Crew: Pilot" hidden="false" collective="false" import="true" targetId="4a2f-210c-a6a6-f548" type="selectionEntryGroup"/>
+        <entryLink id="e04a-63ac-2fa2-963f" name="Crew: Gunner" hidden="false" collective="false" import="true" targetId="1505-4eb4-bd49-0310" type="selectionEntryGroup"/>
+        <entryLink id="cfc3-cd00-ba5e-2fb2" name="Crew: Loader" hidden="false" collective="false" import="true" targetId="aad4-3371-37ee-0bf1" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="f238-7c60-c347-00fb" name="Crew (3)" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8672-7b83-3e13-e522" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="3170-8d3a-3be1-a296" name="Crew: Commander" hidden="false" collective="false" import="true" targetId="d959-1d4f-70df-eb2f" type="selectionEntryGroup"/>
+        <entryLink id="9b92-d8aa-db36-bb4c" name="Crew: Driver" hidden="false" collective="false" import="true" targetId="0a5c-ca78-3e2c-d57a" type="selectionEntryGroup"/>
+        <entryLink id="825c-8e97-198a-c133" name="Crew: Pilot" hidden="false" collective="false" import="true" targetId="4a2f-210c-a6a6-f548" type="selectionEntryGroup"/>
+        <entryLink id="5b6c-826c-b590-33f3" name="Crew: Gunner" hidden="false" collective="false" import="true" targetId="1505-4eb4-bd49-0310" type="selectionEntryGroup"/>
+        <entryLink id="61dc-3f30-3950-e652" name="Crew: Loader" hidden="false" collective="false" import="true" targetId="aad4-3371-37ee-0bf1" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="1883-c544-ae47-9881" name="Crew (4)" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="08d1-eccc-7413-87d5" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="a517-bbba-7627-153b" name="Crew: Commander" hidden="false" collective="false" import="true" targetId="d959-1d4f-70df-eb2f" type="selectionEntryGroup"/>
+        <entryLink id="baeb-91a9-35fb-08a0" name="Crew: Driver" hidden="false" collective="false" import="true" targetId="0a5c-ca78-3e2c-d57a" type="selectionEntryGroup"/>
+        <entryLink id="e82b-1f98-a871-3a43" name="Crew: Pilot" hidden="false" collective="false" import="true" targetId="4a2f-210c-a6a6-f548" type="selectionEntryGroup"/>
+        <entryLink id="7861-ba21-0d9b-ca69" name="Crew: Gunner" hidden="false" collective="false" import="true" targetId="1505-4eb4-bd49-0310" type="selectionEntryGroup"/>
+        <entryLink id="f240-ba62-b58d-6dae" name="Crew: Loader" hidden="false" collective="false" import="true" targetId="aad4-3371-37ee-0bf1" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+</catalogue>
