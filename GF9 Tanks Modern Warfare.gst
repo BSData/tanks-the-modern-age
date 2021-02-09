@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="c4ca-1ece-ac34-246b" name="GF9 Tanks: The Modern Age" revision="1" battleScribeVersion="2.03" authorName="Jason Bardey" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="c4ca-1ece-ac34-246b" name="GF9 Tanks: The Modern Age" revision="2" battleScribeVersion="2.03" authorName="Jason Bardey" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="7d3f-da6b-14eb-0a69" name="Tanks: The Modern Age Rulebook" publisherUrl="https://d21zdtsl28sndy.cloudfront.net/downloads/tanks/Tanks-Modern-Age-Rulebook.pdf"/>
   </publications>
@@ -65,9 +65,6 @@
               </conditions>
             </modifier>
           </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b067-03fe-fd31-885b" type="max"/>
-          </constraints>
           <profiles>
             <profile id="60ee-043d-51c7-9016" name="MANPADS" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
               <characteristics>
@@ -84,9 +81,6 @@
           </costs>
         </selectionEntry>
         <selectionEntry id="403f-2bba-fe47-a8fd" name="Extra Ammunition" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3906-e510-cb42-7959" type="max"/>
-          </constraints>
           <profiles>
             <profile id="f80d-8c2b-758a-36c1" name="Extra Ammunition" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
               <characteristics>
@@ -110,9 +104,6 @@ If this Model takes an uncancelled Hit, the Shooting player may upgrade their fi
               </conditions>
             </modifier>
           </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8bf6-9b69-49b4-4b94" type="max"/>
-          </constraints>
           <profiles>
             <profile id="7326-4624-0f5a-2f76" name="Willie Pete" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
               <characteristics>
@@ -131,15 +122,9 @@ If this Model takes an uncancelled Hit, the Shooting player may upgrade their fi
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="9683-5421-5510-f346" name="Crew: Commander (Global)" hidden="false" collective="false" import="true">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d217-f5f4-c09a-336a" type="max"/>
-      </constraints>
       <selectionEntries>
         <selectionEntry id="970e-6750-8ea5-0169" name="Cunning Commander" hidden="false" collective="false" import="true" type="upgrade">
           <comment>British Striker Expansion</comment>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b733-a51c-cacf-9039" type="max"/>
-          </constraints>
           <profiles>
             <profile id="d78d-8259-6269-dc1f" name="Cunning Commander" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
               <characteristics>
@@ -155,9 +140,6 @@ If this Model takes an uncancelled Hit, the Shooting player may upgrade their fi
           </costs>
         </selectionEntry>
         <selectionEntry id="c5e9-fce0-b808-8295" name="Aggressive Commander" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cd18-b3f0-33d9-d373" type="max"/>
-          </constraints>
           <profiles>
             <profile id="d79e-75ac-f101-7088" name="Aggressive Commander" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
               <characteristics>
@@ -180,9 +162,6 @@ If this Model takes an uncancelled Hit, the Shooting player may upgrade their fi
               </conditions>
             </modifier>
           </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a33d-d526-b8bb-e886" type="max"/>
-          </constraints>
           <profiles>
             <profile id="5835-668a-50cd-e203" name="Altruistic Commander" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
               <characteristics>
@@ -199,9 +178,6 @@ If this Model takes an uncancelled Hit, the Shooting player may upgrade their fi
           </costs>
         </selectionEntry>
         <selectionEntry id="4de4-d2e9-40af-d8e1" name="Superb Commander" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c937-fd9a-53ea-9e72" type="max"/>
-          </constraints>
           <profiles>
             <profile id="3a9e-2dd0-fc0f-bc60" name="Superb Commander" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
               <characteristics>
@@ -219,14 +195,8 @@ If this Model takes an uncancelled Hit, the Shooting player may upgrade their fi
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="b884-fc7d-a0db-fb32" name="Crew: Gunner (Global)" hidden="false" collective="false" import="true">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5f15-112a-f9d9-0544" type="max"/>
-      </constraints>
       <selectionEntries>
         <selectionEntry id="d220-50e8-cf29-d3c2" name="Bloodthirsty Gunner" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d832-4f7f-d29d-2dc8" type="max"/>
-          </constraints>
           <profiles>
             <profile id="9572-0e67-daa1-b8a4" name="Bloodthirsty Gunner" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
               <characteristics>
@@ -286,12 +256,22 @@ If this Model takes an uncancelled Hit, the Shooting player may upgrade their fi
             <cost name="pts" typeId="c525-9df6-1886-28e4" value="3.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="6a5b-7447-4a53-a452" name="Resourceful Gunner" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="e9c3-38ca-5483-3dd7" name="Resourceful Gunner" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+              <characteristics>
+                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">+1 Initiative in the Shooting Phase.
+You may discard this card instead of an Ammo Upgrade card when resolving that card.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="c525-9df6-1886-28e4" value="2.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="29df-b095-c325-3c12" name="Crew: Loader (Global)" hidden="false" collective="false" import="true">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="543d-0408-e317-60e8" type="max"/>
-      </constraints>
       <selectionEntries>
         <selectionEntry id="8bc9-7eae-bd10-0a44" name="Duck Hunter" hidden="false" collective="false" import="true" type="upgrade">
           <comment>British Striker Expansion</comment>
@@ -302,9 +282,6 @@ If this Model takes an uncancelled Hit, the Shooting player may upgrade their fi
               </conditions>
             </modifier>
           </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3730-bb45-82b3-87b9" type="max"/>
-          </constraints>
           <profiles>
             <profile id="189a-a608-ea0f-12a9" name="Duck Hunter" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
               <characteristics>
@@ -328,9 +305,6 @@ If this Model takes an uncancelled Hit, the Shooting player may upgrade their fi
               </conditions>
             </modifier>
           </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5fc9-b7f5-0116-cc15" type="max"/>
-          </constraints>
           <profiles>
             <profile id="de95-580f-1f1b-5aa5" name="Hasty Loader" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
               <characteristics>
@@ -355,9 +329,6 @@ If this Model takes an uncancelled Hit, the Shooting player may upgrade their fi
               </conditions>
             </modifier>
           </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="af70-d60e-e510-f265" type="max"/>
-          </constraints>
           <profiles>
             <profile id="cef0-ac83-1d01-9984" name="Precise Loader" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
               <characteristics>
@@ -381,9 +352,6 @@ If this Model takes an uncancelled Hit, the Shooting player may upgrade their fi
               </conditions>
             </modifier>
           </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b3e5-d257-8666-d476" type="max"/>
-          </constraints>
           <profiles>
             <profile id="adb5-0322-f9af-6859" name="Focused Loader" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
               <characteristics>
@@ -407,9 +375,6 @@ If this Model takes an uncancelled Hit, the Shooting player may upgrade their fi
               </conditions>
             </modifier>
           </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="baec-5055-f2a2-1300" type="max"/>
-          </constraints>
           <profiles>
             <profile id="461a-e360-046d-3c7a" name="Risky Loader" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
               <characteristics>
@@ -433,9 +398,6 @@ If this Model takes an uncancelled Hit, the Shooting player may upgrade their fi
               </conditions>
             </modifier>
           </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f34a-6174-b919-6b2d" type="max"/>
-          </constraints>
           <profiles>
             <profile id="bace-08fb-48ae-2cb9" name="Clever Loader" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
               <characteristics>
@@ -459,9 +421,6 @@ If this Model takes an uncancelled Hit, the Shooting player may upgrade their fi
               </conditions>
             </modifier>
           </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3e8a-1d24-ae00-9e6a" type="max"/>
-          </constraints>
           <profiles>
             <profile id="dc71-67eb-d059-9660" name="Resourceful Loader" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
               <characteristics>
@@ -485,9 +444,6 @@ If this Model takes an uncancelled Hit, the Shooting player may upgrade their fi
               </conditions>
             </modifier>
           </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9710-af45-8ec2-7865" type="max"/>
-          </constraints>
           <profiles>
             <profile id="1de1-a254-f44c-8e82" name="Aggressive Loader" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
               <characteristics>
@@ -506,14 +462,8 @@ If this Model takes an uncancelled Hit, the Shooting player may upgrade their fi
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="829b-dd36-4114-f34f" name="Crew: Driver (Global)" hidden="false" collective="false" import="true">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b093-ef96-413e-ceac" type="max"/>
-      </constraints>
       <selectionEntries>
         <selectionEntry id="ba72-10e7-e307-1715" name="Cunning Driver" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="867f-079c-818b-18fa" type="max"/>
-          </constraints>
           <profiles>
             <profile id="5a87-a3ea-292c-113e" name="Cunning Driver" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
               <characteristics>
@@ -530,9 +480,6 @@ If this Model takes an uncancelled Hit, the Shooting player may upgrade their fi
           </costs>
         </selectionEntry>
         <selectionEntry id="dc10-b057-f0bc-35ca" name="Risky Driver" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="990d-d224-08b2-e4b8" type="max"/>
-          </constraints>
           <profiles>
             <profile id="b6a7-f077-c922-2611" name="Risky Driver" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
               <characteristics>
@@ -549,9 +496,6 @@ If this Model takes an uncancelled Hit, the Shooting player may upgrade their fi
           </costs>
         </selectionEntry>
         <selectionEntry id="5a8f-2126-db5e-9d43" name="Determined Driver" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0cfd-8cea-64d4-c617" type="max"/>
-          </constraints>
           <profiles>
             <profile id="04ad-c647-7d86-2280" name="Determined Driver" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
               <characteristics>
@@ -568,9 +512,6 @@ If this Model takes an uncancelled Hit, the Shooting player may upgrade their fi
           </costs>
         </selectionEntry>
         <selectionEntry id="614d-c13f-c440-fe7c" name="Racing Driver" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="af80-e5dd-5959-7630" type="max"/>
-          </constraints>
           <profiles>
             <profile id="0bc0-396e-625a-00eb" name="Racing Driver" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
               <characteristics>
@@ -588,9 +529,6 @@ If this Model takes an uncancelled Hit, the Shooting player may upgrade their fi
           </costs>
         </selectionEntry>
         <selectionEntry id="6b53-6bb8-bdd0-daa6" name="Defensive Driver" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8648-93bd-5061-0e1e" type="max"/>
-          </constraints>
           <profiles>
             <profile id="89bc-1101-4971-afc0" name="Defensive Driver" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
               <characteristics>
@@ -607,9 +545,6 @@ If this Model takes an uncancelled Hit, the Shooting player may upgrade their fi
           </costs>
         </selectionEntry>
         <selectionEntry id="66f8-3ce6-9d18-98c9" name="Daring Driver" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a1f8-88a5-6a88-eaa5" type="max"/>
-          </constraints>
           <profiles>
             <profile id="e004-aa8f-e8a1-082e" name="Daring Driver" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
               <characteristics>
@@ -633,9 +568,6 @@ If this Model takes an uncancelled Hit, the Shooting player may upgrade their fi
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="e371-86a4-ba44-591b" name="Daring Pilot" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7e2a-fd8d-9b1c-904a" type="max"/>
-          </constraints>
           <profiles>
             <profile id="be29-cd43-854a-a537" name="Daring Pilot" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
               <characteristics>
@@ -667,6 +599,38 @@ If this Model takes an uncancelled Hit, the Shooting player may upgrade their fi
             <cost name="pts" typeId="c525-9df6-1886-28e4" value="1.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="82fc-2c53-6b06-5808" name="Defensive Pilot" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="948d-6c80-3538-fea6" name="Defensive Pilot" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+              <characteristics>
+                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">When rolling Defence dice, you may re-roll one die.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="ef43-4c72-0b7d-e73d" name="Helicopter" hidden="false" targetId="5c6a-3ad0-54b2-6193" primary="false"/>
+            <categoryLink id="fe73-6fb8-864b-b624" name="Crew" hidden="false" targetId="5e8f-5e97-f0cf-b29a" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="c525-9df6-1886-28e4" value="4.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="dc37-f304-971f-f5b9" name="Risky Pilot" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="61c4-f85c-4f6c-6ac4" name="Risky Pilot" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+              <characteristics>
+                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">Do not subtract any Defence dice when this Helicopter is the target of a Close Range shot.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="9568-78c3-61bf-93ca" name="Crew" hidden="false" targetId="5e8f-5e97-f0cf-b29a" primary="false"/>
+            <categoryLink id="b9aa-402a-dff1-fc74" name="Helicopter" hidden="false" targetId="5c6a-3ad0-54b2-6193" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="c525-9df6-1886-28e4" value="3.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="cdd4-9cab-9bd9-7fcd" name="Upgrade: Equipment (Global)" hidden="false" collective="false" import="true">
@@ -676,7 +640,7 @@ If this Model takes an uncancelled Hit, the Shooting player may upgrade their fi
       <selectionEntries>
         <selectionEntry id="009e-e519-58f4-54ca" name="Bigger Hammer" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0285-af52-be93-3648" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aeae-76e3-a630-16ee" type="max"/>
           </constraints>
           <profiles>
             <profile id="b0b0-e172-ef81-d8bd" name="Bigger Hammer" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
@@ -701,7 +665,7 @@ If this Model takes an uncancelled Hit, the Shooting player may upgrade their fi
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b09d-971d-61b7-0b0e" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b44b-4b67-a214-a792" type="max"/>
           </constraints>
           <profiles>
             <profile id="63f2-7783-f8d6-78d8" name="Protected Ammo" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
@@ -720,7 +684,7 @@ If this Model takes an uncancelled Hit, the Shooting player may upgrade their fi
         </selectionEntry>
         <selectionEntry id="0c4d-783c-ef4d-71d7" name="Tool Kit" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="86a3-82e8-b6f0-b78d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="afe8-200e-40eb-efb7" type="max"/>
           </constraints>
           <profiles>
             <profile id="564a-c249-300f-abf0" name="Tool Kit" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
@@ -738,7 +702,7 @@ If this Model takes an uncancelled Hit, the Shooting player may upgrade their fi
         </selectionEntry>
         <selectionEntry id="ae2d-5b38-4ea3-e35b" name="Medical Kit" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fafa-c683-da20-3ce4" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="087d-bb3a-b39c-44dd" type="max"/>
           </constraints>
           <profiles>
             <profile id="c08f-778b-50ad-91bc" name="Medical Kit" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
@@ -756,7 +720,7 @@ If this Model takes an uncancelled Hit, the Shooting player may upgrade their fi
         </selectionEntry>
         <selectionEntry id="4020-3d81-fe52-ba0a" name="Fire Extinguisher" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="feaf-a070-2204-45ae" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b83-4db6-9731-fb18" type="max"/>
           </constraints>
           <profiles>
             <profile id="9149-0bc8-cee7-e2bc" name="Fire Extinguisher" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
@@ -774,7 +738,7 @@ If this Model takes an uncancelled Hit, the Shooting player may upgrade their fi
         </selectionEntry>
         <selectionEntry id="a99e-2f69-43e6-6154" name="Liquid Courage" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a1c8-cbb4-8f70-57ef" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="19f9-da89-9b9a-3ee7" type="max"/>
           </constraints>
           <profiles>
             <profile id="c12e-23e3-912c-c1fe" name="Liquid Courage" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
@@ -799,7 +763,7 @@ If this Model takes an uncancelled Hit, the Shooting player may upgrade their fi
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d058-d12f-6052-b4dc" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f3c2-e02d-4b5f-1595" type="max"/>
           </constraints>
           <profiles>
             <profile id="136d-5200-f39c-2ca9" name="Countermeasures" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
@@ -831,9 +795,6 @@ If this Model takes an uncancelled Hit, the Shooting player may upgrade their fi
               </conditions>
             </modifier>
           </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="09fc-ae5b-cc27-05e4" type="max"/>
-          </constraints>
           <profiles>
             <profile id="aec0-b384-2e25-8b2f" name="ERA" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
               <characteristics>
@@ -857,9 +818,6 @@ If this Model takes an uncancelled Hit, the Shooting player may upgrade their fi
               </conditions>
             </modifier>
           </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="80ae-d80a-9f0f-e7f5" type="max"/>
-          </constraints>
           <profiles>
             <profile id="26db-30ab-f0c1-01cb" name="Improvised Armour" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
               <characteristics>
@@ -883,9 +841,6 @@ If this Model takes an uncancelled Hit, the Shooting player may upgrade their fi
               </conditions>
             </modifier>
           </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f36f-4035-87dd-8f9d" type="max"/>
-          </constraints>
           <profiles>
             <profile id="5e70-ed04-deff-3964" name="Camouflage Netting" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
               <characteristics>
@@ -909,9 +864,6 @@ If this Model takes an uncancelled Hit, the Shooting player may upgrade their fi
               </conditions>
             </modifier>
           </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="922d-ec22-3b88-0672" type="max"/>
-          </constraints>
           <profiles>
             <profile id="fe0f-475a-d0d5-18bd" name="Applique Armour" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
               <characteristics>
@@ -941,9 +893,6 @@ When defending, this Tank may re-roll any one Defence die.</characteristic>
               </conditions>
             </modifier>
           </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0a35-fa88-5d43-2c62" type="max"/>
-          </constraints>
           <profiles>
             <profile id="0777-dcb3-16d7-5db7" name="Supercharger" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
               <characteristics>
@@ -968,9 +917,6 @@ Fast: This Tank&apos;s Speed is 3</characteristic>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="0ded-728f-257d-e86b" name="Ambush" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c662-f486-232a-fe02" type="max"/>
-          </constraints>
           <profiles>
             <profile id="3880-5716-8078-3717" name="Ambush" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
               <characteristics>
@@ -986,9 +932,6 @@ Fast: This Tank&apos;s Speed is 3</characteristic>
           </costs>
         </selectionEntry>
         <selectionEntry id="13ff-05dd-2e9f-6b25" name="Spearhead" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d2b9-7aa1-7f2d-dd51" type="max"/>
-          </constraints>
           <profiles>
             <profile id="a6ea-9072-2785-b760" name="Spearhead" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
               <characteristics>
@@ -1011,9 +954,6 @@ Fast: This Tank&apos;s Speed is 3</characteristic>
               </conditions>
             </modifier>
           </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6d90-bf54-593e-4757" type="max"/>
-          </constraints>
           <profiles>
             <profile id="7015-9088-56e1-0b82" name="Defensive Manoeuvres" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
               <characteristics>

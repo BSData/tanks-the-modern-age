@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="07c3-897b-4ba2-eda6" name="German" revision="1" battleScribeVersion="2.03" authorName="Jason Bardey" library="false" gameSystemId="c4ca-1ece-ac34-246b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="07c3-897b-4ba2-eda6" name="German" revision="1" battleScribeVersion="2.03" authorName="Jason Bardey" library="false" gameSystemId="c4ca-1ece-ac34-246b" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="3627-8ecf-fd35-d91c" name="Marder" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -163,6 +163,7 @@ Home Turf: At the start of the game after Deployment, you may choose and redeplo
         <entryLink id="4b6c-1420-f007-9a65" name="Asassin" hidden="false" collective="false" import="true" targetId="1bbb-b3af-215c-9e6c" type="selectionEntry"/>
         <entryLink id="cb79-0298-378c-7408" name="Risky Gunner" hidden="false" collective="false" import="true" targetId="c697-789d-b470-3aa1" type="selectionEntry"/>
         <entryLink id="326b-bb92-6e0b-08ca" name="Dead-Eye Gunner" hidden="false" collective="false" import="true" targetId="39f9-6a23-90c6-c4a4" type="selectionEntry"/>
+        <entryLink id="dcff-c59a-f9c6-7176" name="Resourceful Gunner" hidden="false" collective="false" import="true" targetId="6a5b-7447-4a53-a452" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="5744-0798-1d48-1a98" name="Crew: Loader" hidden="false" collective="false" import="true">
@@ -201,6 +202,8 @@ Home Turf: At the start of the game after Deployment, you may choose and redeplo
       <entryLinks>
         <entryLink id="3232-956b-ece2-7fb7" name="Daring Pilot" hidden="false" collective="false" import="true" targetId="e371-86a4-ba44-591b" type="selectionEntry"/>
         <entryLink id="4c74-adc5-45e7-f334" name="Cunning Pilot" hidden="false" collective="false" import="true" targetId="a264-38a1-d73f-2849" type="selectionEntry"/>
+        <entryLink id="8b6a-7a24-de4c-9d0d" name="Defensive Pilot" hidden="false" collective="false" import="true" targetId="82fc-2c53-6b06-5808" type="selectionEntry"/>
+        <entryLink id="8434-4af1-6296-a951" name="Risky Pilot" hidden="false" collective="false" import="true" targetId="dc37-f304-971f-f5b9" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="ffd9-c19b-cff4-cfb5" name="Upgrade: Ammo" hidden="false" collective="false" import="true">

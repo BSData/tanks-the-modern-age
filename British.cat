@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9c0e-ee2f-1546-92b3" name="British" revision="1" battleScribeVersion="2.03" authorName="Jason Bardey" library="false" gameSystemId="c4ca-1ece-ac34-246b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9c0e-ee2f-1546-92b3" name="British" revision="1" battleScribeVersion="2.03" authorName="Jason Bardey" library="false" gameSystemId="c4ca-1ece-ac34-246b" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="34b1-380a-4613-ad81" name="Jaguar Engine Upgrade" hidden="false">
       <comment>Category for vehicles allowed to have the Jaguar Engine Upgrade.
@@ -538,6 +538,7 @@ Cheiftain Tanks in this Platoon gain +2 Initiative.</characteristic>
         <entryLink id="d3de-650a-806e-ca48" name="Asassin" hidden="false" collective="false" import="true" targetId="1bbb-b3af-215c-9e6c" type="selectionEntry"/>
         <entryLink id="33be-bdd2-59b1-7baa" name="Risky Gunner" hidden="false" collective="false" import="true" targetId="c697-789d-b470-3aa1" type="selectionEntry"/>
         <entryLink id="3177-df92-fa52-8c15" name="Dead-Eye Gunner" hidden="false" collective="false" import="true" targetId="39f9-6a23-90c6-c4a4" type="selectionEntry"/>
+        <entryLink id="95ae-14c4-015a-03e9" name="Resourceful Gunner" hidden="false" collective="false" import="true" targetId="6a5b-7447-4a53-a452" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="1ccc-f4af-a489-2a9b" name="Crew: Loader" hidden="false" collective="false" import="true">
@@ -574,7 +575,7 @@ Cheiftain Tanks in this Platoon gain +2 Initiative.</characteristic>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d68a-4342-6b4e-c65b" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="2f96-9b1e-7bb3-5100" name="John Davison" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="2f96-9b1e-7bb3-5100" name="• John Davison" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -586,7 +587,7 @@ Cheiftain Tanks in this Platoon gain +2 Initiative.</characteristic>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7af9-789f-08a7-da93" type="max"/>
           </constraints>
           <profiles>
-            <profile id="b297-574b-c09f-f9dd" name="John Davison" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+            <profile id="b297-574b-c09f-f9dd" name="• John Davison" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
               <characteristics>
                 <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">+2 Initiative.
 While this Helicopter has a Speed token, it may re-roll one Defence dice.</characteristic>
@@ -601,6 +602,8 @@ While this Helicopter has a Speed token, it may re-roll one Defence dice.</chara
       <entryLinks>
         <entryLink id="260a-5f36-85fa-76f0" name="Daring Pilot" hidden="false" collective="false" import="true" targetId="e371-86a4-ba44-591b" type="selectionEntry"/>
         <entryLink id="c312-3402-853b-b17e" name="Cunning Pilot" hidden="false" collective="false" import="true" targetId="a264-38a1-d73f-2849" type="selectionEntry"/>
+        <entryLink id="6f64-8826-97af-7b4c" name="Defensive Pilot" hidden="false" collective="false" import="true" targetId="82fc-2c53-6b06-5808" type="selectionEntry"/>
+        <entryLink id="04a0-a1af-5260-fbcd" name="Risky Pilot" hidden="false" collective="false" import="true" targetId="dc37-f304-971f-f5b9" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="cc31-c030-0dab-61ff" name="Crew (4)" hidden="false" collective="false" import="true">

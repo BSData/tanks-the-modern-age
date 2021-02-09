@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d908-9a77-c2df-62d3" name="Soviet" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="c4ca-1ece-ac34-246b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d908-9a77-c2df-62d3" name="Soviet" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="c4ca-1ece-ac34-246b" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="b88c-f171-9123-f80b" name="AT-10 Stabber Upgrade" hidden="false">
       <comment>Category for vehicles allowed to have the AT-10 Stabber Upgrade.
@@ -12,6 +12,10 @@ T-72</comment>
     <categoryEntry id="e866-79eb-ceb2-1418" name="Scout" hidden="false">
       <comment>Category C. Tank Crew cannot be applied to vehicles with the Scout Keyword.
 </comment>
+    </categoryEntry>
+    <categoryEntry id="8635-c804-5aee-3f56" name="AT-6 Spiral Upgrade" hidden="false">
+      <comment>Category for vehicles allowed to have the AT-6 Spiral Upgrade.
+Hind.</comment>
     </categoryEntry>
   </categoryEntries>
   <selectionEntries>
@@ -222,6 +226,7 @@ T-72</comment>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="9c11-f402-0417-cac4" name="Helicopter" hidden="false" targetId="5c6a-3ad0-54b2-6193" primary="true"/>
+        <categoryLink id="1e0f-f6cb-be5e-90ae" name="AT-6 Spiral Upgrade" hidden="false" targetId="8635-c804-5aee-3f56" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="313c-8fff-39da-b430" name="Upgrades" hidden="false" collective="false" import="true" targetId="99ff-3f4c-6846-2de8" type="selectionEntryGroup"/>
@@ -282,7 +287,7 @@ T-72</comment>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bab5-3446-c7db-97d7" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="8e05-e49a-4873-eeb8" name="Yuri Potecknov" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="8e05-e49a-4873-eeb8" name="• Yuri Potecknov" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -294,7 +299,7 @@ T-72</comment>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0ae5-f70a-8ff3-fa71" type="max"/>
           </constraints>
           <profiles>
-            <profile id="cc46-a069-f995-fd6b" name="Yuri Potecknov" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+            <profile id="cc46-a069-f995-fd6b" name="• Yuri Potecknov" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
               <characteristics>
                 <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">While you have at least one Destroyed Tank, this Tank gains +1 Attack.
 Tanks in this Platoon gain +1 Initiative for each Destroyed Tank.</characteristic>
@@ -308,7 +313,7 @@ Tanks in this Platoon gain +1 Initiative for each Destroyed Tank.</characteristi
             <cost name="pts" typeId="c525-9df6-1886-28e4" value="7.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="38b4-0c78-644b-3d0b" name="Grisha Malakov" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="38b4-0c78-644b-3d0b" name="• Grisha Malakov" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -320,7 +325,7 @@ Tanks in this Platoon gain +1 Initiative for each Destroyed Tank.</characteristi
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5800-dae7-42a6-072d" type="max"/>
           </constraints>
           <profiles>
-            <profile id="b9f8-2320-7e2e-56cd" name="Grisha Malakov" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+            <profile id="b9f8-2320-7e2e-56cd" name="• Grisha Malakov" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
               <characteristics>
                 <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">+1 Defence.
 At the end of the Movement phase, t his Tank may discard one Upgrade or Crew card to make a single move.</characteristic>
@@ -385,7 +390,7 @@ This Model cannot be assigned any other Crew cards.</characteristic>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6788-aff1-5101-9c57" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="9bc0-ac1f-b94d-5218" name="Babatev Lermontov" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="9bc0-ac1f-b94d-5218" name="• Babatev Lermontov" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -397,7 +402,7 @@ This Model cannot be assigned any other Crew cards.</characteristic>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7a81-cb98-56ee-9f53" type="max"/>
           </constraints>
           <profiles>
-            <profile id="9f5d-da39-7399-b502" name="Babatev Lermontov" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+            <profile id="9f5d-da39-7399-b502" name="• Babatev Lermontov" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
               <characteristics>
                 <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">+2 Initiative during the Shooting phase.
 Reveal this card at the start of the Shooting phase to give this Tank +1 Attack until the end of the turn.</characteristic>
@@ -412,12 +417,36 @@ Reveal this card at the start of the Shooting phase to give this Tank +1 Attack 
             <cost name="pts" typeId="c525-9df6-1886-28e4" value="3.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="ebb0-54b8-693b-a599" name="• Alexander Gagarin" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="41cd-9622-6b80-1bc3" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="dbf3-b782-73cc-4ba2" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="4af5-ae7e-87d2-c4ec" name="• Alexander Gagarin" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+              <characteristics>
+                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">+2 Initiative during the Shooting Phase.
+This Helicopter may exchange two Hits for a Critical Hit.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="c525-9df6-1886-28e4" value="4.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="6a13-2018-d625-4ac8" name="Bloodthirsty Gunner" hidden="false" collective="false" import="true" targetId="d220-50e8-cf29-d3c2" type="selectionEntry"/>
         <entryLink id="d43d-e817-2ea9-6bc8" name="Asassin" hidden="false" collective="false" import="true" targetId="1bbb-b3af-215c-9e6c" type="selectionEntry"/>
         <entryLink id="547e-0a53-65f5-75dd" name="Risky Gunner" hidden="false" collective="false" import="true" targetId="c697-789d-b470-3aa1" type="selectionEntry"/>
         <entryLink id="4e2d-09ce-0f34-a9c9" name="Dead-Eye Gunner" hidden="false" collective="false" import="true" targetId="39f9-6a23-90c6-c4a4" type="selectionEntry"/>
+        <entryLink id="0fd9-231c-19a6-63a5" name="Resourceful Gunner" hidden="false" collective="false" import="true" targetId="6a5b-7447-4a53-a452" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="c1d8-24b6-f961-9017" name="Crew: Loader" hidden="false" collective="false" import="true">
@@ -446,9 +475,33 @@ Reveal this card at the start of the Shooting phase to give this Tank +1 Attack 
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1812-6abf-b46a-9093" type="max"/>
       </constraints>
+      <selectionEntries>
+        <selectionEntry id="9e57-520c-037e-d749" name="• Vasily Popov" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f06a-a203-3e9a-537b" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="46c2-09bb-5d28-9dde" name="• Vasily Popov" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+              <characteristics>
+                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">+2 Initiative.
+This Helicopter gains +1 Attack when Shooting Tanks with Base 2 Defence or higher.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="51ef-7a08-e48e-e23c" name="Crew" hidden="false" targetId="5e8f-5e97-f0cf-b29a" primary="false"/>
+            <categoryLink id="697b-4a4a-53a6-0500" name="Helicopter" hidden="false" targetId="5c6a-3ad0-54b2-6193" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="c525-9df6-1886-28e4" value="7.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <entryLinks>
         <entryLink id="6fb8-4580-a1b7-f2bc" name="Daring Pilot" hidden="false" collective="false" import="true" targetId="e371-86a4-ba44-591b" type="selectionEntry"/>
         <entryLink id="c30b-24cb-0ac8-8552" name="Cunning Pilot" hidden="false" collective="false" import="true" targetId="a264-38a1-d73f-2849" type="selectionEntry"/>
+        <entryLink id="1be1-fc8a-a0f6-440d" name="Risky Pilot" hidden="false" collective="false" import="true" targetId="dc37-f304-971f-f5b9" type="selectionEntry"/>
+        <entryLink id="357d-710c-5065-1dff" name="Defensive Pilot" hidden="false" collective="false" import="true" targetId="82fc-2c53-6b06-5808" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="b190-a34c-7da8-279f" name="Crew (4)" hidden="false" collective="false" import="true">
@@ -522,6 +575,56 @@ Reveal this card at the start of the Shooting phase to give this Tank +1 Attack 
           </infoLinks>
           <costs>
             <cost name="pts" typeId="c525-9df6-1886-28e4" value="2.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="3089-5f03-eda0-3686" name="UB-32 Rocket Launcher" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="b03d-c3b8-a29a-ab26" name="UB-32 Rocket Launcher" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="41cd-9622-6b80-1bc3" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <characteristics>
+                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">Instead of its normal Attack, this Model may discard this card to make an unmodified 2 Attack against the Target Tank and all Tanks within Close Range of the Target Tank. Targets only roll their Base Defence against this Attack.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="b187-a2f0-6273-59ec" name="Upgrade" hidden="false" targetId="1478-ca00-f06f-b9d5" primary="false"/>
+            <categoryLink id="94c5-03ef-862e-2ccf" name="Helicopter" hidden="false" targetId="5c6a-3ad0-54b2-6193" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="c525-9df6-1886-28e4" value="3.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="a998-8cf5-5460-5abe" name="AT-6 Spiral" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8635-c804-5aee-3f56" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="41cd-9622-6b80-1bc3" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile id="fc8e-2b2b-a9d3-a140" name="AT-6 Spiral" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+              <characteristics>
+                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">Hind Only. This Helicopter gains Missiles (5).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="d155-dfc2-6282-da29" name="Missiles (X)" hidden="false" targetId="726c-f879-474a-444f" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="c525-9df6-1886-28e4" value="4.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e6d7-c9d6-1f46-19ee" name="French" revision="1" battleScribeVersion="2.03" authorName="Jason Bardey" library="false" gameSystemId="c4ca-1ece-ac34-246b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e6d7-c9d6-1f46-19ee" name="French" revision="1" battleScribeVersion="2.03" authorName="Jason Bardey" library="false" gameSystemId="c4ca-1ece-ac34-246b" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="122c-ff0d-ab5c-65f3" name="AMX-10P" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -198,6 +198,7 @@
         <entryLink id="acc5-57b9-9ef6-de67" name="Asassin" hidden="false" collective="false" import="true" targetId="1bbb-b3af-215c-9e6c" type="selectionEntry"/>
         <entryLink id="cbfd-463f-781f-548c" name="Risky Gunner" hidden="false" collective="false" import="true" targetId="c697-789d-b470-3aa1" type="selectionEntry"/>
         <entryLink id="8796-b37a-6be6-4cbd" name="Dead-Eye Gunner" hidden="false" collective="false" import="true" targetId="39f9-6a23-90c6-c4a4" type="selectionEntry"/>
+        <entryLink id="46e4-4e2d-73dd-37b9" name="Resourceful Gunner" hidden="false" collective="false" import="true" targetId="6a5b-7447-4a53-a452" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="aad4-3371-37ee-0bf1" name="Crew: Loader" hidden="false" collective="false" import="true">
@@ -236,6 +237,8 @@
       <entryLinks>
         <entryLink id="6e95-967b-be14-adaf" name="Daring Pilot" hidden="false" collective="false" import="true" targetId="e371-86a4-ba44-591b" type="selectionEntry"/>
         <entryLink id="7ef9-2785-36e8-93a4" name="Cunning Pilot" hidden="false" collective="false" import="true" targetId="a264-38a1-d73f-2849" type="selectionEntry"/>
+        <entryLink id="45a0-63ae-7854-191e" name="Defensive Pilot" hidden="false" collective="false" import="true" targetId="82fc-2c53-6b06-5808" type="selectionEntry"/>
+        <entryLink id="e5a5-ebe8-ade3-9290" name="Risky Pilot" hidden="false" collective="false" import="true" targetId="dc37-f304-971f-f5b9" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="bca8-9119-14d1-ae95" name="Upgrade: Ammo" hidden="false" collective="false" import="true">
