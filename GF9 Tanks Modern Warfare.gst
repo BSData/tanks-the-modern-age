@@ -192,6 +192,18 @@ If this Model takes an uncancelled Hit, the Shooting player may upgrade their fi
             <cost name="pts" typeId="c525-9df6-1886-28e4" value="2.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="bb64-7d15-1351-2d97" name="Risky Commander" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="608f-c458-7c15-547a" name="Risky Commander" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+              <characteristics>
+                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">When this Model suffers a Critical Hit while defending against a Tank that is within Close Range, you may draw a second Critical Hit. If you do, choose one to apply to this Model and discard the other.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="c525-9df6-1886-28e4" value="2.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="b884-fc7d-a0db-fb32" name="Crew: Gunner (Global)" hidden="false" collective="false" import="true">

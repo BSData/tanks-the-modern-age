@@ -467,12 +467,40 @@ Abrams Tanks in this Platoon gain +1 Initiative.</characteristic>
             <cost name="pts" typeId="c525-9df6-1886-28e4" value="6.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="bc35-0460-4742-75bf" name="• Randall Avery" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5c6a-3ad0-54b2-6193" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b9ad-48e3-8af4-c738" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="a1a6-7f39-8097-7511" name="• Randall Avery" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+              <characteristics>
+                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">+2 Initiative in the Movement Phase.
+While this Tank is not in Concealing Terrain, this Tank may Upgrade up to one uncancelled Hit to a Critical Hit.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="9258-7e60-9b5f-b382" name="Crew" hidden="false" targetId="5e8f-5e97-f0cf-b29a" primary="false"/>
+            <categoryLink id="f1ed-2f39-cf2e-403e" name="Tank" hidden="false" targetId="41cd-9622-6b80-1bc3" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="c525-9df6-1886-28e4" value="4.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="9bc1-e0f1-8e5f-1989" name="Aggressive Commander" hidden="false" collective="false" import="true" targetId="c5e9-fce0-b808-8295" type="selectionEntry"/>
         <entryLink id="0484-9ba4-ee22-bcc3" name="Cunning Commander" hidden="false" collective="false" import="true" targetId="970e-6750-8ea5-0169" type="selectionEntry"/>
         <entryLink id="46df-4377-b7f4-1b16" name="Altruistic Commander" hidden="false" collective="false" import="true" targetId="a9bf-5adc-d225-0604" type="selectionEntry"/>
         <entryLink id="bf67-6993-7654-b9f7" name="Superb Commander" hidden="false" collective="false" import="true" targetId="4de4-d2e9-40af-d8e1" type="selectionEntry"/>
+        <entryLink id="ce17-ad16-16a1-3f32" name="Risky Commander" hidden="false" collective="false" import="true" targetId="bb64-7d15-1351-2d97" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="259e-d009-c906-3c9e" name="Crew: Driver" hidden="false" collective="false" import="true">
@@ -683,6 +711,33 @@ This Tank may have two difference Equipment Upgrade cards.</characteristic>
           </profiles>
           <costs>
             <cost name="pts" typeId="c525-9df6-1886-28e4" value="1.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="5252-5ec5-0189-2ffe" name="• David Mason" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5c6a-3ad0-54b2-6193" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="eccc-8a4b-ec21-4694" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="b8a3-53d6-a2a3-5c32" name="• David Mason" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+              <characteristics>
+                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">+1 Defence.
+When you use an Ammo card, roll a die. On a result of a 5 or 6 that card is not discarded after it is used.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="06d9-f9af-dc00-663e" name="Crew" hidden="false" targetId="5e8f-5e97-f0cf-b29a" primary="false"/>
+            <categoryLink id="4831-3847-44f5-a0ab" name="Tank" hidden="false" targetId="41cd-9622-6b80-1bc3" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="c525-9df6-1886-28e4" value="4.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>

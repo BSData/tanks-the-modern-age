@@ -407,6 +407,7 @@ Cheiftain Tanks in this Platoon gain +2 Initiative.</characteristic>
         <entryLink id="559e-8bb3-4de0-76a3" name="Cunning Commander" hidden="false" collective="false" import="true" targetId="970e-6750-8ea5-0169" type="selectionEntry"/>
         <entryLink id="6419-36f5-0268-4c70" name="Altruistic Commander" hidden="false" collective="false" import="true" targetId="a9bf-5adc-d225-0604" type="selectionEntry"/>
         <entryLink id="b5c2-939b-edd8-e2b9" name="Superb Commander" hidden="false" collective="false" import="true" targetId="4de4-d2e9-40af-d8e1" type="selectionEntry"/>
+        <entryLink id="e165-04d7-88b4-c84c" name="Risky Commander" hidden="false" collective="false" import="true" targetId="bb64-7d15-1351-2d97" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="4f63-6543-af5a-7de7" name="Crew: Driver" hidden="false" collective="false" import="true">

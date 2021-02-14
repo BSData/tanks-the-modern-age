@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d908-9a77-c2df-62d3" name="Soviet" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="c4ca-1ece-ac34-246b" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d908-9a77-c2df-62d3" name="Soviet" revision="2" battleScribeVersion="2.03" authorName="Jason Bardey" library="false" gameSystemId="c4ca-1ece-ac34-246b" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="b88c-f171-9123-f80b" name="AT-10 Stabber Upgrade" hidden="false">
       <comment>Category for vehicles allowed to have the AT-10 Stabber Upgrade.
@@ -16,6 +16,14 @@ T-72</comment>
     <categoryEntry id="8635-c804-5aee-3f56" name="AT-6 Spiral Upgrade" hidden="false">
       <comment>Category for vehicles allowed to have the AT-6 Spiral Upgrade.
 Hind.</comment>
+    </categoryEntry>
+    <categoryEntry id="de6f-9e49-9d96-2a70" name="AT-3 Sagger Upgrade" hidden="false">
+      <comment>Category for vehicles allowed to have the AT-3 Sagger Upgrade.
+BMP-1</comment>
+    </categoryEntry>
+    <categoryEntry id="3c6e-c3f0-c3ac-efc9" name="AT-5 Spandrel Upgrade" hidden="false">
+      <comment>Category for vehicles allowed to have the AT-5 Spandrel Upgrade
+BMP-2</comment>
     </categoryEntry>
   </categoryEntries>
   <selectionEntries>
@@ -135,6 +143,7 @@ Hind.</comment>
       <categoryLinks>
         <categoryLink id="2dcb-20f3-4a72-2af3" name="Tank" hidden="false" targetId="41cd-9622-6b80-1bc3" primary="true"/>
         <categoryLink id="9f8e-8c0a-4f5d-4fed" name="Category C. Tank Crew Restriction" hidden="false" targetId="e866-79eb-ceb2-1418" primary="false"/>
+        <categoryLink id="68df-3d0e-122f-bc46" name="AT-3 Sagger Upgrade" hidden="false" targetId="de6f-9e49-9d96-2a70" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="6186-c8d4-7df5-b737" name="Crew (3)" hidden="false" collective="false" import="true" targetId="9293-a1e3-75d8-7f3d" type="selectionEntryGroup"/>
@@ -168,6 +177,7 @@ Hind.</comment>
       <categoryLinks>
         <categoryLink id="badf-ad9a-c414-246f" name="Tank" hidden="false" targetId="41cd-9622-6b80-1bc3" primary="true"/>
         <categoryLink id="e49b-c255-da3f-b514" name="Category C. Tank Crew Restriction" hidden="false" targetId="e866-79eb-ceb2-1418" primary="false"/>
+        <categoryLink id="0f83-21a1-b824-8228" name="AT-5 Spandrel Upgrade" hidden="false" targetId="3c6e-c3f0-c3ac-efc9" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="cd51-9587-1086-9942" name="Upgrades" hidden="false" collective="false" import="true" targetId="99ff-3f4c-6846-2de8" type="selectionEntryGroup"/>
@@ -308,6 +318,7 @@ Tanks in this Platoon gain +1 Initiative for each Destroyed Tank.</characteristi
           </profiles>
           <categoryLinks>
             <categoryLink id="b8c0-86e5-5bcf-d4da" name="Tank" hidden="false" targetId="41cd-9622-6b80-1bc3" primary="false"/>
+            <categoryLink id="cb97-d894-4989-ffcd" name="Crew" hidden="false" targetId="5e8f-5e97-f0cf-b29a" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name="pts" typeId="c525-9df6-1886-28e4" value="7.0"/>
@@ -332,6 +343,10 @@ At the end of the Movement phase, t his Tank may discard one Upgrade or Crew car
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink id="ac88-2387-42e1-34b2" name="Crew" hidden="false" targetId="5e8f-5e97-f0cf-b29a" primary="false"/>
+            <categoryLink id="d69b-7363-8cae-a27d" name="Tank" hidden="false" targetId="41cd-9622-6b80-1bc3" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="c525-9df6-1886-28e4" value="5.0"/>
           </costs>
@@ -357,12 +372,63 @@ This Model cannot be assigned any other Crew cards.</characteristic>
             <cost name="pts" typeId="c525-9df6-1886-28e4" value="-1.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="e9b9-b998-bd8a-757b" name="• Ivan Kasparov" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5c6a-3ad0-54b2-6193" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5c54-ca60-cc99-767a" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="e924-9b8d-1cf2-7abb" name="• Ivan Kasparov" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+              <characteristics>
+                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">+3 Initiative, +1 Damage Capacity.
+While this Tank has a Speed token, it may re-roll one of it&apos;s Attack dice.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="9ff7-1536-0ec6-7bb5" name="Crew" hidden="false" targetId="5e8f-5e97-f0cf-b29a" primary="false"/>
+            <categoryLink id="50eb-b049-7082-1ea2" name="Tank" hidden="false" targetId="41cd-9622-6b80-1bc3" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="c525-9df6-1886-28e4" value="5.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="9f5d-22af-075e-780b" name="Komissar" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5c6a-3ad0-54b2-6193" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile id="9938-3b23-f3ce-24cc" name="Komissar" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+              <characteristics>
+                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">Discard one Crew or Upgrade card to cancel a Bailed Out, Shell Shocked, or Stunned Crew effect.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="a78b-c753-fbb9-e804" name="Crew" hidden="false" targetId="5e8f-5e97-f0cf-b29a" primary="false"/>
+            <categoryLink id="80f9-a3e4-0489-0f86" name="Tank" hidden="false" targetId="41cd-9622-6b80-1bc3" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="c525-9df6-1886-28e4" value="1.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="b0b0-ea7f-97b7-ad4e" name="Aggressive Commander" hidden="false" collective="false" import="true" targetId="c5e9-fce0-b808-8295" type="selectionEntry"/>
         <entryLink id="ff22-6b95-b8ff-14e3" name="Cunning Commander" hidden="false" collective="false" import="true" targetId="970e-6750-8ea5-0169" type="selectionEntry"/>
         <entryLink id="f53b-59b7-a987-efcd" name="Altruistic Commander" hidden="false" collective="false" import="true" targetId="a9bf-5adc-d225-0604" type="selectionEntry"/>
         <entryLink id="e8e9-6557-f145-4de5" name="Superb Commander" hidden="false" collective="false" import="true" targetId="4de4-d2e9-40af-d8e1" type="selectionEntry"/>
+        <entryLink id="19e9-da19-85ed-92eb" name="Risky Commander" hidden="false" collective="false" import="true" targetId="bb64-7d15-1351-2d97" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="ce82-98ce-c6ce-55eb" name="Crew: Driver" hidden="false" collective="false" import="true">
@@ -625,6 +691,58 @@ This Helicopter gains +1 Attack when Shooting Tanks with Base 2 Defence or highe
           </infoLinks>
           <costs>
             <cost name="pts" typeId="c525-9df6-1886-28e4" value="4.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="324c-1b8d-6941-307e" name="AT-3 Sagger" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de6f-9e49-9d96-2a70" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile id="24b6-f1d7-8d53-31e9" name="AT-3 Sagger" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+              <characteristics>
+                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">BMP-1 only. This Tank gains Missiles (4).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="ecca-d90c-dba8-f39b" name="Missiles (X)" hidden="false" targetId="726c-f879-474a-444f" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Missiles (4)"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="c525-9df6-1886-28e4" value="2.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="952f-c85e-fdaa-97fc" name="AT-5 Spandrel" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c6e-c3f0-c3ac-efc9" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile id="fd0a-1c2b-c8a3-05a1" name="AT-5 Spandrel" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+              <characteristics>
+                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">BMP-2 only. This Tank gains Missiles (5).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="9d5e-a129-ad99-0d40" name="Missiles (X)" hidden="false" targetId="726c-f879-474a-444f" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Missiles (5)"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="c525-9df6-1886-28e4" value="2.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>

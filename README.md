@@ -33,8 +33,10 @@ This repository contains all Global, USA and Soviet cards from Starter Set as we
 * USA	LAV
 * USA	M901 ITV
 * USA Cobra
+* USA Humvee-TOW
 * Soviet T-55
 * Soviet T-72
+* Soviet BMP
 * Soviet Hind
 
 __What's this?__

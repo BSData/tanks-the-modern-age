@@ -167,6 +167,7 @@
         <entryLink id="a288-8e46-d0ba-6884" name="Cunning Commander" hidden="false" collective="false" import="true" targetId="970e-6750-8ea5-0169" type="selectionEntry"/>
         <entryLink id="5ce5-b42c-d6b5-e8a9" name="Altruistic Commander" hidden="false" collective="false" import="true" targetId="a9bf-5adc-d225-0604" type="selectionEntry"/>
         <entryLink id="880d-462e-f692-ba20" name="Superb Commander" hidden="false" collective="false" import="true" targetId="4de4-d2e9-40af-d8e1" type="selectionEntry"/>
+        <entryLink id="5bbd-6615-fd84-fbb3" name="Risky Commander" hidden="false" collective="false" import="true" targetId="bb64-7d15-1351-2d97" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="0a5c-ca78-3e2c-d57a" name="Crew: Driver" hidden="false" collective="false" import="true">
