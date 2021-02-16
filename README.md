@@ -21,7 +21,7 @@ This repository contains BattleScribe data for the Gale Force 9 game, Tanks: The
 
 This was released in 2018 and brought the Tanks tabletop game into the Cold War era. It is **not** compatible with either Tanks: World War 2 (2016) or World Of Tanks: Miniatures Game (2020) from the same company.
 
-This repository contains Battlescribe data for USA, Soviet, British, French and German forces. I don't have any of the French or German forces so they are missing any country or expansion specific hero, crew and upgrade cards, but you can create a platoon with the basic vehicles and global upgrades.
+This repository contains Battlescribe data for USA, Soviet, British, French and German forces.
 
 This repository contains all Global, USA and Soviet cards from Starter Set as well as the hero, crew and upgrade cards from the following Expansions:
 * British Cheiftain
