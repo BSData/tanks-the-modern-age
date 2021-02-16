@@ -27,17 +27,25 @@ This repository contains all Global, USA and Soviet cards from Starter Set as we
 * British Cheiftain
 * British Scimitar
 * British Striker
-* British	Lynx Helicopter
-* USA	M1 Abrams
-* USA	M60 Patton
-* USA	LAV
-* USA	M901 ITV
+* British Lynx Helicopter
+* British Swingfire
+* USA M1 Abrams
+* USA M60 Patton
+* USA LAV
+* USA M901 ITV
 * USA Cobra
 * USA Humvee-TOW
 * Soviet T-55
 * Soviet T-72
 * Soviet BMP
 * Soviet Hind
+* German PAH
+* German Leopard 1
+* German Leopard 2
+* German Marder
+* French Gazelle
+* French AMX-10P
+* French AMX-30
 
 __What's this?__
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e0ab-b75c-9a1b-1d47" name="American" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="c4ca-1ece-ac34-246b" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e0ab-b75c-9a1b-1d47" name="American" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="c4ca-1ece-ac34-246b" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="54a1-d682-1d08-1e4c" name="Alpha 66" hidden="false"/>
     <categoryEntry id="3537-0416-30f7-2b6b" name="M109 or M163" hidden="false">
@@ -501,6 +501,8 @@ While this Tank is not in Concealing Terrain, this Tank may Upgrade up to one un
         <entryLink id="46df-4377-b7f4-1b16" name="Altruistic Commander" hidden="false" collective="false" import="true" targetId="a9bf-5adc-d225-0604" type="selectionEntry"/>
         <entryLink id="bf67-6993-7654-b9f7" name="Superb Commander" hidden="false" collective="false" import="true" targetId="4de4-d2e9-40af-d8e1" type="selectionEntry"/>
         <entryLink id="ce17-ad16-16a1-3f32" name="Risky Commander" hidden="false" collective="false" import="true" targetId="bb64-7d15-1351-2d97" type="selectionEntry"/>
+        <entryLink id="8cc8-f3df-8147-51d1" name="Artillery Observer" hidden="false" collective="false" import="true" targetId="0d07-7d5a-8d1b-dd06" type="selectionEntry"/>
+        <entryLink id="a625-6905-b6b4-1f48" name="Inspired Commander" hidden="false" collective="false" import="true" targetId="a20e-f7be-fef9-d141" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="259e-d009-c906-3c9e" name="Crew: Driver" hidden="false" collective="false" import="true">
@@ -654,6 +656,7 @@ If this Helicopter does not score any uncancelled Hits or Critical Hits with its
         <entryLink id="f4f1-5aed-eb6a-8cdf" name="Risky Gunner" hidden="false" collective="false" import="true" targetId="c697-789d-b470-3aa1" type="selectionEntry"/>
         <entryLink id="62db-ac31-7ee5-edcc" name="Dead-Eye Gunner" hidden="false" collective="false" import="true" targetId="39f9-6a23-90c6-c4a4" type="selectionEntry"/>
         <entryLink id="a0bb-ee5e-af11-3e37" name="Resourceful Gunner" hidden="false" collective="false" import="true" targetId="6a5b-7447-4a53-a452" type="selectionEntry"/>
+        <entryLink id="462c-9e91-89af-6f4e" name="Sharpshooter Gunner" hidden="false" collective="false" import="true" targetId="1e50-f931-bd9f-c4c3" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="70f8-5553-759f-6635" name="Crew: Loader" hidden="false" collective="false" import="true">
@@ -878,6 +881,7 @@ Discard to gain +1 Attack</characteristic>
         <entryLink id="9249-1806-761f-305a" name="Extra Ammunition" hidden="false" collective="false" import="true" targetId="403f-2bba-fe47-a8fd" type="selectionEntry"/>
         <entryLink id="3ed7-b177-d58f-225c" name="MANPADS" hidden="false" collective="false" import="true" targetId="a3a1-0028-e9d8-8d03" type="selectionEntry"/>
         <entryLink id="29c2-94e2-62c0-e4fe" name="Willie Pete" hidden="false" collective="false" import="true" targetId="2232-a799-9abe-c10e" type="selectionEntry"/>
+        <entryLink id="2907-8d21-ec37-a95b" name="Bomblet Bombardement" hidden="false" collective="false" import="true" targetId="92cf-a504-a828-a1c2" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="336c-9f52-70fa-236a" name="Upgrade: Armour" hidden="false" collective="false" import="true">

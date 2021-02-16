@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d908-9a77-c2df-62d3" name="Soviet" revision="2" battleScribeVersion="2.03" authorName="Jason Bardey" library="false" gameSystemId="c4ca-1ece-ac34-246b" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d908-9a77-c2df-62d3" name="Soviet" revision="3" battleScribeVersion="2.03" authorName="Jason Bardey" library="false" gameSystemId="c4ca-1ece-ac34-246b" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="b88c-f171-9123-f80b" name="AT-10 Stabber Upgrade" hidden="false">
       <comment>Category for vehicles allowed to have the AT-10 Stabber Upgrade.
@@ -429,6 +429,8 @@ While this Tank has a Speed token, it may re-roll one of it&apos;s Attack dice.<
         <entryLink id="f53b-59b7-a987-efcd" name="Altruistic Commander" hidden="false" collective="false" import="true" targetId="a9bf-5adc-d225-0604" type="selectionEntry"/>
         <entryLink id="e8e9-6557-f145-4de5" name="Superb Commander" hidden="false" collective="false" import="true" targetId="4de4-d2e9-40af-d8e1" type="selectionEntry"/>
         <entryLink id="19e9-da19-85ed-92eb" name="Risky Commander" hidden="false" collective="false" import="true" targetId="bb64-7d15-1351-2d97" type="selectionEntry"/>
+        <entryLink id="9ada-1dc3-e650-15e1" name="Artillery Observer" hidden="false" collective="false" import="true" targetId="0d07-7d5a-8d1b-dd06" type="selectionEntry"/>
+        <entryLink id="5f59-396f-5003-5e30" name="Inspired Commander" hidden="false" collective="false" import="true" targetId="a20e-f7be-fef9-d141" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="ce82-98ce-c6ce-55eb" name="Crew: Driver" hidden="false" collective="false" import="true">
@@ -513,6 +515,7 @@ This Helicopter may exchange two Hits for a Critical Hit.</characteristic>
         <entryLink id="547e-0a53-65f5-75dd" name="Risky Gunner" hidden="false" collective="false" import="true" targetId="c697-789d-b470-3aa1" type="selectionEntry"/>
         <entryLink id="4e2d-09ce-0f34-a9c9" name="Dead-Eye Gunner" hidden="false" collective="false" import="true" targetId="39f9-6a23-90c6-c4a4" type="selectionEntry"/>
         <entryLink id="0fd9-231c-19a6-63a5" name="Resourceful Gunner" hidden="false" collective="false" import="true" targetId="6a5b-7447-4a53-a452" type="selectionEntry"/>
+        <entryLink id="89fd-abca-8576-673e" name="Sharpshooter Gunner" hidden="false" collective="false" import="true" targetId="1e50-f931-bd9f-c4c3" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="c1d8-24b6-f961-9017" name="Crew: Loader" hidden="false" collective="false" import="true">
@@ -750,6 +753,7 @@ This Helicopter gains +1 Attack when Shooting Tanks with Base 2 Defence or highe
         <entryLink id="4f90-33c0-01f6-200b" name="Extra Ammunition" hidden="false" collective="false" import="true" targetId="403f-2bba-fe47-a8fd" type="selectionEntry"/>
         <entryLink id="3e1e-2a9a-46a4-a44a" name="MANPADS" hidden="false" collective="false" import="true" targetId="a3a1-0028-e9d8-8d03" type="selectionEntry"/>
         <entryLink id="c647-31d0-8bc4-9dc6" name="Willie Pete" hidden="false" collective="false" import="true" targetId="2232-a799-9abe-c10e" type="selectionEntry"/>
+        <entryLink id="9016-e0f1-fc67-f532" name="Bomblet Bombardement" hidden="false" collective="false" import="true" targetId="92cf-a504-a828-a1c2" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="f6e2-1aef-7183-8a69" name="Upgrade: Armour" hidden="false" collective="false" import="true">

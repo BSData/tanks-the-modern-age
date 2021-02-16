@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="07c3-897b-4ba2-eda6" name="German" revision="1" battleScribeVersion="2.03" authorName="Jason Bardey" library="false" gameSystemId="c4ca-1ece-ac34-246b" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="07c3-897b-4ba2-eda6" name="German" revision="2" battleScribeVersion="2.03" authorName="Jason Bardey" library="false" gameSystemId="c4ca-1ece-ac34-246b" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <categoryEntries>
+    <categoryEntry id="1786-a821-0e19-dbef" name="Marder" hidden="false">
+      <comment>Category to restrict Mounted MILAN to Marder	</comment>
+    </categoryEntry>
+  </categoryEntries>
   <selectionEntries>
     <selectionEntry id="3627-8ecf-fd35-d91c" name="Marder" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -23,6 +28,7 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink id="a468-ec73-9594-cab9" name="New CategoryLink" hidden="false" targetId="41cd-9622-6b80-1bc3" primary="true"/>
+        <categoryLink id="166c-84dd-351d-cf36" name="Marder" hidden="false" targetId="1786-a821-0e19-dbef" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="1685-f5a5-dbaf-e2c5" name="Upgrades" hidden="false" collective="false" import="true" targetId="afd9-948f-5af8-3fce" type="selectionEntryGroup"/>
@@ -127,12 +133,81 @@ Home Turf: At the start of the game after Deployment, you may choose and redeplo
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="adcc-b6c3-c49e-122e" type="max"/>
       </constraints>
+      <selectionEntries>
+        <selectionEntry id="bae0-84fb-9c91-a384" name="Platoon Coordinator" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5c6a-3ad0-54b2-6193" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile id="72eb-4bb2-e391-e77d" name="Platoon Coordinator" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+              <characteristics>
+                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">Friendly Stationary Tanks within Close Range of an enemy Tank gain +2 Initiative during the Shooting Phase.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="c525-9df6-1886-28e4" value="2.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="a2d3-d6ba-225d-8bb5" name="• Karl Hauff" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5c6a-3ad0-54b2-6193" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f3e6-3316-db8d-5198" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="31f5-0091-aafa-935b" name="• Karl Hauff" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+              <characteristics>
+                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">+2 Initiative.
+After Shooting, if this Tank fails to score a Hit or a Critical Hit, it may make a single move. Do not add a Speed token for this move.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="c525-9df6-1886-28e4" value="4.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="018f-3e4b-86dd-0031" name="• Ernst Müller" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5c6a-3ad0-54b2-6193" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="700c-05b0-aae7-c939" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="cd8e-305a-9a46-ad3b" name="• Ernst Müller" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+              <characteristics>
+                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">+2 Initiative.
+This Tank gains +1 Attack against target Models that have a lower Base Initiative.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="c525-9df6-1886-28e4" value="7.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <entryLinks>
         <entryLink id="836f-e61f-5c40-6e90" name="Aggressive Commander" hidden="false" collective="false" import="true" targetId="c5e9-fce0-b808-8295" type="selectionEntry"/>
         <entryLink id="0117-7aef-9f66-565c" name="Cunning Commander" hidden="false" collective="false" import="true" targetId="970e-6750-8ea5-0169" type="selectionEntry"/>
         <entryLink id="861e-1951-0dcb-c904" name="Altruistic Commander" hidden="false" collective="false" import="true" targetId="a9bf-5adc-d225-0604" type="selectionEntry"/>
         <entryLink id="6509-28b5-05df-7722" name="Superb Commander" hidden="false" collective="false" import="true" targetId="4de4-d2e9-40af-d8e1" type="selectionEntry"/>
         <entryLink id="cdff-0c0a-22fc-51e5" name="Risky Commander" hidden="false" collective="false" import="true" targetId="bb64-7d15-1351-2d97" type="selectionEntry"/>
+        <entryLink id="6c75-3351-1995-b76f" name="Inspired Commander" hidden="false" collective="false" import="true" targetId="a20e-f7be-fef9-d141" type="selectionEntry"/>
+        <entryLink id="17a9-c5ec-751d-bf3e" name="Artillery Observer" hidden="false" collective="false" import="true" targetId="0d07-7d5a-8d1b-dd06" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="35b0-e020-0497-0068" name="Crew: Driver" hidden="false" collective="false" import="true">
@@ -146,6 +221,25 @@ Home Turf: At the start of the game after Deployment, you may choose and redeplo
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="737a-37b1-0e4f-dd26" type="max"/>
       </constraints>
+      <selectionEntries>
+        <selectionEntry id="e8e6-d4f3-9814-2891" name="• Dietrich Manheim" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="eda9-ae15-ae48-d158" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="7a56-7190-d858-30fe" name="• Dietrich Manheim" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+              <characteristics>
+                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">+2 Initiative during in the Movement Phase.
+Immediately after Shooting with this Tank you may Reveal this card to let this Tank make a single move in any direction.
+Do not assign a Speed token for this move.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="c525-9df6-1886-28e4" value="5.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <entryLinks>
         <entryLink id="3e20-4f65-8aa8-4cf7" name="Cunning Driver" hidden="false" collective="false" import="true" targetId="ba72-10e7-e307-1715" type="selectionEntry"/>
         <entryLink id="af54-9975-9923-cf52" name="Defensive Driver" hidden="false" collective="false" import="true" targetId="6b53-6bb8-bdd0-daa6" type="selectionEntry"/>
@@ -159,12 +253,103 @@ Home Turf: At the start of the game after Deployment, you may choose and redeplo
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="52aa-98ae-e782-07b4" type="max"/>
       </constraints>
+      <selectionEntries>
+        <selectionEntry id="5db2-0136-ebd6-c032" name="Lone Wolf" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5c6a-3ad0-54b2-6193" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile id="90e4-18fe-132e-0910" name="Lone Wolf" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+              <characteristics>
+                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">While this Tank has no friendly Models within Close Range and it is in Cover, it gains +1 Attack.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="c525-9df6-1886-28e4" value="3.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="1015-2041-ccc8-b96c" name="• Friedrich Wulf" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="41cd-9622-6b80-1bc3" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="471e-c172-bbab-5f26" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="5c49-81e0-7e06-c1ef" name="• Friedrich Wulf" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+              <characteristics>
+                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">+2 Initiative during the Shooting Phase.
+While this helicopter has a Speed token, it may re-roll two of its Attack dice.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="c525-9df6-1886-28e4" value="5.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="f073-d87f-2659-610e" name="• Jurgen Schmidt" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5c6a-3ad0-54b2-6193" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bcac-7407-6642-1809" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="16de-7503-3b8a-2de2" name="• Jurgen Schmidt" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+              <characteristics>
+                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">+2 Initiative during the Shooting Phase.
+If you Reveal this card immediately after this Tank shoots, it may make an unmodified 4 Attack against the same Target.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="c525-9df6-1886-28e4" value="4.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="748c-d066-74d1-7fff" name="• Klaus Katelaan" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5c6a-3ad0-54b2-6193" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ad68-6a36-33d7-3f97" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="de3d-bcbc-6bc0-d14f" name="• Klaus Katelaan" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+              <characteristics>
+                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">+1 Attack.
+When drawing Critical Damage cards for the first uncancelled Critical Hit scored by this Model, draw two addtional cards. The Shooting player choose two of those Critical cards to discard.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="c525-9df6-1886-28e4" value="7.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <entryLinks>
         <entryLink id="84af-122b-7331-35fa" name="Bloodthirsty Gunner" hidden="false" collective="false" import="true" targetId="d220-50e8-cf29-d3c2" type="selectionEntry"/>
         <entryLink id="4b6c-1420-f007-9a65" name="Asassin" hidden="false" collective="false" import="true" targetId="1bbb-b3af-215c-9e6c" type="selectionEntry"/>
         <entryLink id="cb79-0298-378c-7408" name="Risky Gunner" hidden="false" collective="false" import="true" targetId="c697-789d-b470-3aa1" type="selectionEntry"/>
         <entryLink id="326b-bb92-6e0b-08ca" name="Dead-Eye Gunner" hidden="false" collective="false" import="true" targetId="39f9-6a23-90c6-c4a4" type="selectionEntry"/>
         <entryLink id="dcff-c59a-f9c6-7176" name="Resourceful Gunner" hidden="false" collective="false" import="true" targetId="6a5b-7447-4a53-a452" type="selectionEntry"/>
+        <entryLink id="fee7-6634-fbe5-d136" name="Sharpshooter Gunner" hidden="false" collective="false" import="true" targetId="1e50-f931-bd9f-c4c3" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="5744-0798-1d48-1a98" name="Crew: Loader" hidden="false" collective="false" import="true">
@@ -178,6 +363,21 @@ Home Turf: At the start of the game after Deployment, you may choose and redeplo
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab77-4950-545b-ea55" type="max"/>
       </constraints>
+      <selectionEntries>
+        <selectionEntry id="55d5-1901-818d-9414" name="Homeland Defender" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="1b44-19fa-c947-6c74" name="Homeland Defender" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+              <characteristics>
+                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">+1 Initiative during the Movement Phase.
+This Tank gains +1 Attack while Shooting using the Final Fury rule.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="c525-9df6-1886-28e4" value="2.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <entryLinks>
         <entryLink id="5b9a-8ed7-6cc7-1ab1" name="Aggressive Loader" hidden="false" collective="false" import="true" targetId="9f4e-3567-50d5-20f0" type="selectionEntry"/>
         <entryLink id="0834-04b2-99c7-1f98" name="Duck Hunter" hidden="false" collective="false" import="true" targetId="8bc9-7eae-bd10-0a44" type="selectionEntry"/>
@@ -200,6 +400,25 @@ Home Turf: At the start of the game after Deployment, you may choose and redeplo
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="837b-d96e-3440-431b" type="max"/>
       </constraints>
+      <selectionEntries>
+        <selectionEntry id="66c3-23da-9473-b49d" name="• Günter Weber" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8bfd-37b6-e859-d542" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="88a1-f0c0-baef-2654" name="• Günter Weber" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+              <characteristics>
+                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">+2 Initiative.
+Immediately after this Helicopter shoots, roll a die.
+On a result of a 5 or 6 this Helicopter may change it&apos;s Elevation without gaining a Speed token.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="c525-9df6-1886-28e4" value="5.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <entryLinks>
         <entryLink id="3232-956b-ece2-7fb7" name="Daring Pilot" hidden="false" collective="false" import="true" targetId="e371-86a4-ba44-591b" type="selectionEntry"/>
         <entryLink id="4c74-adc5-45e7-f334" name="Cunning Pilot" hidden="false" collective="false" import="true" targetId="a264-38a1-d73f-2849" type="selectionEntry"/>
@@ -211,10 +430,40 @@ Home Turf: At the start of the game after Deployment, you may choose and redeplo
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9bdc-3119-de48-2fda" type="max"/>
       </constraints>
+      <selectionEntries>
+        <selectionEntry id="3123-073a-31b5-48cf" name="Mounted MILAN" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1786-a821-0e19-dbef" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile id="d1a1-f6ae-c717-2735" name="Mounted MILAN" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+              <characteristics>
+                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">Marder only.
+This Tank gains Missiles (4).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="627e-39ad-cc5d-9e57" name="Missiles (X)" hidden="false" targetId="726c-f879-474a-444f" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Missile (4)"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="c525-9df6-1886-28e4" value="2.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <entryLinks>
         <entryLink id="44b0-dfbf-79e4-afa2" name="Extra Ammunition" hidden="false" collective="false" import="true" targetId="403f-2bba-fe47-a8fd" type="selectionEntry"/>
         <entryLink id="36c3-3033-08e3-6902" name="MANPADS" hidden="false" collective="false" import="true" targetId="a3a1-0028-e9d8-8d03" type="selectionEntry"/>
         <entryLink id="9111-5a34-3c0f-b0d0" name="Willie Pete" hidden="false" collective="false" import="true" targetId="2232-a799-9abe-c10e" type="selectionEntry"/>
+        <entryLink id="ee05-b6bf-efb6-3cb1" name="Bomblet Bombardement" hidden="false" collective="false" import="true" targetId="92cf-a504-a828-a1c2" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="20db-92b7-e70c-ef77" name="Upgrade: Armour" hidden="false" collective="false" import="true">

@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e6d7-c9d6-1f46-19ee" name="French" revision="1" battleScribeVersion="2.03" authorName="Jason Bardey" library="false" gameSystemId="c4ca-1ece-ac34-246b" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e6d7-c9d6-1f46-19ee" name="French" revision="2" battleScribeVersion="2.03" authorName="Jason Bardey" library="false" gameSystemId="c4ca-1ece-ac34-246b" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <categoryEntries>
+    <categoryEntry id="aaf1-ad28-07ee-244b" name="AMX-10P" hidden="false">
+      <comment>Restrict MILAN Firing Post to AMX-10P</comment>
+    </categoryEntry>
+  </categoryEntries>
   <selectionEntries>
     <selectionEntry id="122c-ff0d-ab5c-65f3" name="AMX-10P" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -23,6 +28,7 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink id="aefc-0fc5-5ebc-71b5" name="Tank" hidden="false" targetId="41cd-9622-6b80-1bc3" primary="true"/>
+        <categoryLink id="ffc2-b4ab-a567-a58c" name="AMX-10P" hidden="false" targetId="aaf1-ad28-07ee-244b" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="8d31-b65e-4dad-8d2f" name="Upgrades" hidden="false" collective="false" import="true" targetId="55cb-d9ad-23a4-01cc" type="selectionEntryGroup"/>
@@ -94,7 +100,7 @@
         <cost name="pts" typeId="c525-9df6-1886-28e4" value="21.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="bdfe-b610-689d-8498" name=" AMX-30" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="bdfe-b610-689d-8498" name="AMX-30" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="26d1-6c94-29d4-6b0c" name=" AMX-30" hidden="false" typeId="d470-1387-e9b7-4e31" typeName="Tank">
           <characteristics>
@@ -142,6 +148,7 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink id="a2dc-4f2e-428c-b62c" name="Tank" hidden="false" targetId="41cd-9622-6b80-1bc3" primary="true"/>
+        <categoryLink id="dc01-08f4-56f0-14ec" name="Artillery" hidden="false" targetId="00f8-7fc8-2a77-9b9f" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="540f-33ec-5c0c-320e" name="Upgrades" hidden="false" collective="false" import="true" targetId="55cb-d9ad-23a4-01cc" type="selectionEntryGroup"/>
@@ -162,12 +169,53 @@
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f53-cdd2-cc5e-2731" type="max"/>
       </constraints>
+      <selectionEntries>
+        <selectionEntry id="0fb9-f515-eacd-608e" name="• Paul Durand" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5c6a-3ad0-54b2-6193" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="93a5-ccc6-da4f-cdc5" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="b257-9675-24e0-314f" name="• Paul Durand" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+              <characteristics>
+                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">+2 Initiative. +1 Defence.
+Before Deployment choose up to two Tanks in this Platoon to leave off table.
+During the first Repair Damage step, place these Tanks on the table touching any non-Deployment table edge.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="c525-9df6-1886-28e4" value="5.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="bf32-0f28-0c48-ddbe" name="Charging Commander" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="84ef-02d8-317f-1549" name="Charging Commander" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+              <characteristics>
+                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">+1 Initiative during the Movement Phase.
+When you Reveal this card, until the end of the turn this Tank gains +1 Defence when defending against Tanks at Close Range.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="c525-9df6-1886-28e4" value="3.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <entryLinks>
         <entryLink id="d8bf-507f-f153-f8f3" name="Aggressive Commander" hidden="false" collective="false" import="true" targetId="c5e9-fce0-b808-8295" type="selectionEntry"/>
         <entryLink id="a288-8e46-d0ba-6884" name="Cunning Commander" hidden="false" collective="false" import="true" targetId="970e-6750-8ea5-0169" type="selectionEntry"/>
         <entryLink id="5ce5-b42c-d6b5-e8a9" name="Altruistic Commander" hidden="false" collective="false" import="true" targetId="a9bf-5adc-d225-0604" type="selectionEntry"/>
         <entryLink id="880d-462e-f692-ba20" name="Superb Commander" hidden="false" collective="false" import="true" targetId="4de4-d2e9-40af-d8e1" type="selectionEntry"/>
         <entryLink id="5bbd-6615-fd84-fbb3" name="Risky Commander" hidden="false" collective="false" import="true" targetId="bb64-7d15-1351-2d97" type="selectionEntry"/>
+        <entryLink id="a7f6-385a-5804-4846" name="Artillery Observer" hidden="false" collective="false" import="true" targetId="0d07-7d5a-8d1b-dd06" type="selectionEntry"/>
+        <entryLink id="2497-8aae-b91c-5d91" name="Inspired Commander" hidden="false" collective="false" import="true" targetId="a20e-f7be-fef9-d141" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="0a5c-ca78-3e2c-d57a" name="Crew: Driver" hidden="false" collective="false" import="true">
@@ -181,6 +229,41 @@
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f1e-5d63-fe74-f335" type="max"/>
       </constraints>
+      <selectionEntries>
+        <selectionEntry id="16a7-2609-d301-2586" name="Charging Driver" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="5775-62f9-1eb8-1cec" name="Charging Driver" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+              <characteristics>
+                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">+2 Initiative during the Movement Phase.
+When you Reveal this card, until the end of the turn, this Model gains the Fast keyword.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="e00b-6700-6e27-e899" name="Crew" hidden="false" targetId="5e8f-5e97-f0cf-b29a" primary="false"/>
+            <categoryLink id="744f-9de9-a984-1416" name="Upgrade" hidden="false" targetId="1478-ca00-f06f-b9d5" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="c525-9df6-1886-28e4" value="3.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="376a-4143-c66b-8258" name="• Henri Delacroix" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="802e-84ab-56c6-996c" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="2911-630c-e2c2-6b5f" name="• Henri Delacroix" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+              <characteristics>
+                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">While this Tank has at least one Speed token, it may re-roll a Defence die.
+Discard this card to make a single move during the Movement Phase after all other Models have moved. Do not assign a Speed token for this move.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="c525-9df6-1886-28e4" value="4.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <entryLinks>
         <entryLink id="bbfd-bda1-d340-309d" name="Cunning Driver" hidden="false" collective="false" import="true" targetId="ba72-10e7-e307-1715" type="selectionEntry"/>
         <entryLink id="f384-c509-f294-179f" name="Defensive Driver" hidden="false" collective="false" import="true" targetId="6b53-6bb8-bdd0-daa6" type="selectionEntry"/>
@@ -194,12 +277,107 @@
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a15-2b83-b2d6-30eb" type="max"/>
       </constraints>
+      <selectionEntries>
+        <selectionEntry id="f772-6fe0-51dc-45fd" name="• Clément Martin" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="41cd-9622-6b80-1bc3" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1862-14cd-3090-3382" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="ac8e-95e0-d910-0479" name="• Clément Martin" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+              <characteristics>
+                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">When shooting, this Helicopter always counts as having a Side Shot.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="dcb8-7824-de0e-6b5e" name="Crew" hidden="false" targetId="5e8f-5e97-f0cf-b29a" primary="false"/>
+            <categoryLink id="ea4e-2762-818d-b687" name="Upgrade" hidden="false" targetId="1478-ca00-f06f-b9d5" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="c525-9df6-1886-28e4" value="8.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="c45b-90e6-0fa8-ecb8" name="• Laurent Dyre" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5c6a-3ad0-54b2-6193" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c972-4277-de3e-1b08" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="4489-ff41-3385-df44" name="• Laurent Dyre" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+              <characteristics>
+                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">+2 Initiative during the Shooting Phase.
+After this Tank shoots, for the rest of the turn, Models that fire at the same target may re-roll one of their attack dice.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="c525-9df6-1886-28e4" value="4.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="8eb9-db50-c8ac-2b12" name="• Andre Mareau" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5c6a-3ad0-54b2-6193" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="21c4-dc0d-4a95-c654" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="a13f-57f9-3206-06dd" name="• Andre Mareau" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+              <characteristics>
+                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">+1 Attack.
+This Tank may re-roll up to two Attack dice while within Close Range of its target.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="c525-9df6-1886-28e4" value="5.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="539f-4091-489b-a744" name="Charging Gunner" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5c6a-3ad0-54b2-6193" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile id="6383-1a05-2f76-44fb" name="Charging Gunner" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+              <characteristics>
+                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">+1 Initiative during the Shooting Phase.
+When you Reveal this card, until the end of the turn, this Model gains +1 Attack when taking a Side Shot.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="c525-9df6-1886-28e4" value="3.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <entryLinks>
         <entryLink id="a035-7cec-c048-6cad" name="Bloodthirsty Gunner" hidden="false" collective="false" import="true" targetId="d220-50e8-cf29-d3c2" type="selectionEntry"/>
         <entryLink id="acc5-57b9-9ef6-de67" name="Asassin" hidden="false" collective="false" import="true" targetId="1bbb-b3af-215c-9e6c" type="selectionEntry"/>
         <entryLink id="cbfd-463f-781f-548c" name="Risky Gunner" hidden="false" collective="false" import="true" targetId="c697-789d-b470-3aa1" type="selectionEntry"/>
         <entryLink id="8796-b37a-6be6-4cbd" name="Dead-Eye Gunner" hidden="false" collective="false" import="true" targetId="39f9-6a23-90c6-c4a4" type="selectionEntry"/>
         <entryLink id="46e4-4e2d-73dd-37b9" name="Resourceful Gunner" hidden="false" collective="false" import="true" targetId="6a5b-7447-4a53-a452" type="selectionEntry"/>
+        <entryLink id="a50a-c98a-9f15-d2c7" name="Sharpshooter Gunner" hidden="false" collective="false" import="true" targetId="1e50-f931-bd9f-c4c3" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="aad4-3371-37ee-0bf1" name="Crew: Loader" hidden="false" collective="false" import="true">
@@ -235,6 +413,28 @@
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6325-d94b-1a15-9d4c" type="max"/>
       </constraints>
+      <selectionEntries>
+        <selectionEntry id="d4d6-a08c-0f58-fb27" name="• Baptiste Deschamp" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e8d4-765b-35f3-d32e" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="c6a2-d6f9-01a0-d425" name="• Baptiste Deschamp" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+              <characteristics>
+                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">+2 Initiative.
+At the end of the Movement Phase, this Helicopter may make a single move or change its Elevation. Do not count this extra Movement when assigning a Speed token.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="baf4-03bb-b7cc-ddaf" name="Crew" hidden="false" targetId="5e8f-5e97-f0cf-b29a" primary="false"/>
+            <categoryLink id="7261-0259-911b-8fd3" name="Upgrade" hidden="false" targetId="1478-ca00-f06f-b9d5" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="c525-9df6-1886-28e4" value="6.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <entryLinks>
         <entryLink id="6e95-967b-be14-adaf" name="Daring Pilot" hidden="false" collective="false" import="true" targetId="e371-86a4-ba44-591b" type="selectionEntry"/>
         <entryLink id="7ef9-2785-36e8-93a4" name="Cunning Pilot" hidden="false" collective="false" import="true" targetId="a264-38a1-d73f-2849" type="selectionEntry"/>
@@ -246,10 +446,44 @@
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0484-e23c-40b2-bb61" type="max"/>
       </constraints>
+      <selectionEntries>
+        <selectionEntry id="91b8-6be9-ef74-8d94" name="MILAN Firing Post" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="aaf1-ad28-07ee-244b" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile id="aa4d-50b3-4773-1e81" name="MILAN Firing Post" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+              <characteristics>
+                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">AMX-10P only. 
+This tank gains Missiles (4).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="0d57-8525-220d-060c" name="Missiles (X)" hidden="false" targetId="726c-f879-474a-444f" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Missiles (4)"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="c361-a87c-1192-4d3f" name="Upgrade" hidden="false" targetId="1478-ca00-f06f-b9d5" primary="false"/>
+            <categoryLink id="2420-239d-2437-23dc" name="Tank" hidden="false" targetId="41cd-9622-6b80-1bc3" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="c525-9df6-1886-28e4" value="2.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <entryLinks>
         <entryLink id="3626-f529-a0f8-d7ab" name="Extra Ammunition" hidden="false" collective="false" import="true" targetId="403f-2bba-fe47-a8fd" type="selectionEntry"/>
         <entryLink id="084e-2202-3e13-c833" name="MANPADS" hidden="false" collective="false" import="true" targetId="a3a1-0028-e9d8-8d03" type="selectionEntry"/>
         <entryLink id="18d6-b27e-6508-d511" name="Willie Pete" hidden="false" collective="false" import="true" targetId="2232-a799-9abe-c10e" type="selectionEntry"/>
+        <entryLink id="4da2-e3a4-a7cb-79e5" name="Bomblet Bombardement" hidden="false" collective="false" import="true" targetId="92cf-a504-a828-a1c2" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="1dcb-3808-e57d-35e1" name="Upgrade: Armour" hidden="false" collective="false" import="true">

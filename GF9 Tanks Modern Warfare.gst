@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="c4ca-1ece-ac34-246b" name="GF9 Tanks: The Modern Age" revision="2" battleScribeVersion="2.03" authorName="Jason Bardey" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="c4ca-1ece-ac34-246b" name="GF9 Tanks: The Modern Age" revision="4" battleScribeVersion="2.03" authorName="Jason Bardey" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="7d3f-da6b-14eb-0a69" name="Tanks: The Modern Age Rulebook" publisherUrl="https://d21zdtsl28sndy.cloudfront.net/downloads/tanks/Tanks-Modern-Age-Rulebook.pdf"/>
   </publications>
@@ -42,6 +42,12 @@
     <categoryEntry id="41cd-9622-6b80-1bc3" name="Tank" hidden="false"/>
     <categoryEntry id="5e8f-5e97-f0cf-b29a" name="Crew" hidden="false"/>
     <categoryEntry id="1478-ca00-f06f-b9d5" name="Upgrade" hidden="false"/>
+    <categoryEntry id="00f8-7fc8-2a77-9b9f" name="Artillery" hidden="false">
+      <comment>Category to restrict &apos;Bomblet Bombardment&apos; to artillery tanks only.</comment>
+    </categoryEntry>
+    <categoryEntry id="330c-c123-06df-86db" name="Custom Content" hidden="false">
+      <comment>Custom Content Category to support additon of non-offical content, e.g. new vehicles or weapons.</comment>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d878-5ffc-498f-f821" name="Platoon" hidden="false">
@@ -117,6 +123,26 @@ If this Model takes an uncancelled Hit, the Shooting player may upgrade their fi
           </categoryLinks>
           <costs>
             <cost name="pts" typeId="c525-9df6-1886-28e4" value="2.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="92cf-a504-a828-a1c2" name="Bomblet Bombardement" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="00f8-7fc8-2a77-9b9f" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile id="89a6-0894-34d6-7847" name="Bomblet Bombardement" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+              <characteristics>
+                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">Artillery Tank only.
+Instead of it&apos;s Normal Attack, this Model may discard this card to make an unmodifed 3 Attack against the Target Tank and all Tanks within Close Range of the Target Tank. Tanks only roll their Base Defence against this Attack.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="c525-9df6-1886-28e4" value="4.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -204,6 +230,46 @@ If this Model takes an uncancelled Hit, the Shooting player may upgrade their fi
             <cost name="pts" typeId="c525-9df6-1886-28e4" value="2.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="a20e-f7be-fef9-d141" name="Inspired Commander" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="8661-4421-cbba-b53f" name="Inspired Commander" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+              <characteristics>
+                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">+2 Initiative.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="8683-01c7-4d44-519f" name="Crew" hidden="false" targetId="5e8f-5e97-f0cf-b29a" primary="false"/>
+            <categoryLink id="d50d-ded5-245a-1320" name="Upgrade" hidden="false" targetId="1478-ca00-f06f-b9d5" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="c525-9df6-1886-28e4" value="4.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0d07-7d5a-8d1b-dd06" name="Artillery Observer" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5c6a-3ad0-54b2-6193" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile id="1906-e6b9-1419-dedd" name="Artillery Observer" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+              <characteristics>
+                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">Once per turn a Stationary Tank with the Artillery keyword may draw its Line of Sight from this Tank instead of itself when Shooting</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="b25f-1928-4bdd-d84d" name="Crew" hidden="false" targetId="5e8f-5e97-f0cf-b29a" primary="false"/>
+            <categoryLink id="462d-af8b-f22b-a072" name="Upgrade" hidden="false" targetId="1478-ca00-f06f-b9d5" primary="false"/>
+            <categoryLink id="173a-50ab-cae7-1cfb" name="Artillery Tank" hidden="false" targetId="00f8-7fc8-2a77-9b9f" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="c525-9df6-1886-28e4" value="2.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="b884-fc7d-a0db-fb32" name="Crew: Gunner (Global)" hidden="false" collective="false" import="true">
@@ -279,6 +345,22 @@ You may discard this card instead of an Ammo Upgrade card when resolving that ca
           </profiles>
           <costs>
             <cost name="pts" typeId="c525-9df6-1886-28e4" value="2.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="1e50-f931-bd9f-c4c3" name="Sharpshooter Gunner" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="ac3b-ba5b-c830-3747" name="Sharpshooter Gunner" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+              <characteristics>
+                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">When drawing Critical cards for the first uncancelled Critical hit scored by this Model, draw one additonal card. The attacking player chooses one of those Critical cards to discard.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="5204-3886-bc00-83f1" name="Crew" hidden="false" targetId="5e8f-5e97-f0cf-b29a" primary="false"/>
+            <categoryLink id="9220-8b8f-a342-d00d" name="Upgrade" hidden="false" targetId="1478-ca00-f06f-b9d5" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="c525-9df6-1886-28e4" value="5.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -908,11 +990,13 @@ When defending, this Tank may re-roll any one Defence die.</characteristic>
           <profiles>
             <profile id="0777-dcb3-16d7-5db7" name="Supercharger" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
               <characteristics>
-                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">Discard to gain Fast for this Movement Phase
-Fast: This Tank&apos;s Speed is 3</characteristic>
+                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">Discard to gain Fast for this Movement Phase.</characteristic>
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="ebda-2126-f927-68cd" name="Fast" hidden="false" targetId="458a-cf6f-36e5-e79a" type="rule"/>
+          </infoLinks>
           <categoryLinks>
             <categoryLink id="c32a-77da-e852-9cb5" name="Tank" hidden="false" targetId="41cd-9622-6b80-1bc3" primary="false"/>
             <categoryLink id="b717-ae41-f150-eef8" name="Upgrade" hidden="false" targetId="1478-ca00-f06f-b9d5" primary="false"/>
@@ -1040,7 +1124,7 @@ Fast: This Tank&apos;s Speed is 3</characteristic>
     <rule id="0406-4110-1519-7897" name="Rapid Fire (X)" hidden="false">
       <description>This Model has X Attack when shooting at Helicopters or targets with 0 Base Defence.</description>
     </rule>
-    <rule id="726c-f879-474a-444f" name="Missiles (X)" hidden="false">
+    <rule id="726c-f879-474a-444f" name="Missiles (X)" publicationId="7d3f-da6b-14eb-0a69" page="Page 20" hidden="false">
       <description>When shooting, this Model can choose to roll X Attack dice against Tanks or Helicopters, with the following rules:
 
 **Arming Distance**

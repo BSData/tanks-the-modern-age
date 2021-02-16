@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9c0e-ee2f-1546-92b3" name="British" revision="1" battleScribeVersion="2.03" authorName="Jason Bardey" library="false" gameSystemId="c4ca-1ece-ac34-246b" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9c0e-ee2f-1546-92b3" name="British" revision="1" battleScribeVersion="2.03" authorName="Jason Bardey" library="false" gameSystemId="c4ca-1ece-ac34-246b" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="34b1-380a-4613-ad81" name="Jaguar Engine Upgrade" hidden="false">
       <comment>Category for vehicles allowed to have the Jaguar Engine Upgrade.
@@ -267,6 +267,7 @@ Spartan MCT, Striker, Scorpion, Scimitar.</comment>
         <entryLink id="36bc-d885-3c04-f4c0" name="Extra Ammunition" hidden="false" collective="false" import="true" targetId="403f-2bba-fe47-a8fd" type="selectionEntry"/>
         <entryLink id="5cfc-5755-38fc-9f3a" name="MANPADS" hidden="false" collective="false" import="true" targetId="a3a1-0028-e9d8-8d03" type="selectionEntry"/>
         <entryLink id="28d9-5121-da69-2848" name="Willie Pete" hidden="false" collective="false" import="true" targetId="2232-a799-9abe-c10e" type="selectionEntry"/>
+        <entryLink id="6761-7410-7cf2-5b9c" name="Bomblet Bombardement" hidden="false" collective="false" import="true" targetId="92cf-a504-a828-a1c2" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="5511-ea61-d198-612e" name="Upgrade: Doctrine" hidden="false" collective="false" import="true">
@@ -373,6 +374,10 @@ When you Reveal this card, until the end of the turn this Model gains +2 Initiat
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink id="894c-4ebe-cf84-1e21" name="Crew" hidden="false" targetId="5e8f-5e97-f0cf-b29a" primary="false"/>
+            <categoryLink id="e103-f9eb-9696-b56d" name="Upgrade" hidden="false" targetId="1478-ca00-f06f-b9d5" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="c525-9df6-1886-28e4" value="3.0"/>
           </costs>
@@ -397,8 +402,55 @@ Cheiftain Tanks in this Platoon gain +2 Initiative.</characteristic>
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink id="e844-061d-470e-ac6f" name="Crew" hidden="false" targetId="5e8f-5e97-f0cf-b29a" primary="false"/>
+            <categoryLink id="5767-de01-4eeb-bfa3" name="Upgrade" hidden="false" targetId="1478-ca00-f06f-b9d5" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="c525-9df6-1886-28e4" value="7.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="89ee-4087-ed1a-d708" name="Big Game Hunter" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="928b-f1d6-9934-e2ba" name="Big Game Hunter" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+              <characteristics>
+                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">When Shooting at a target Model that is not in Cover, this Model may Upgrade one Hit to a Critical Hit.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="9cf5-fedd-a96f-77ef" name="Crew" hidden="false" targetId="5e8f-5e97-f0cf-b29a" primary="false"/>
+            <categoryLink id="f931-71fe-43fa-e280" name="Upgrade" hidden="false" targetId="1478-ca00-f06f-b9d5" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="c525-9df6-1886-28e4" value="2.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="cfed-3eae-1ea3-7a09" name="• Rupert Spencer" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5c6a-3ad0-54b2-6193" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5823-0424-b2c8-38b3" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="d547-d2e8-2a20-d468" name="• Rupert Spencer" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+              <characteristics>
+                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">+2 Initiative.
+While this Tank does not have a Speed token, it gains +1 Attack</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="fdb4-0317-f584-9b76" name="Crew" hidden="false" targetId="5e8f-5e97-f0cf-b29a" primary="false"/>
+            <categoryLink id="73b7-b6b6-9a49-b309" name="Upgrade" hidden="false" targetId="1478-ca00-f06f-b9d5" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="c525-9df6-1886-28e4" value="6.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -408,6 +460,8 @@ Cheiftain Tanks in this Platoon gain +2 Initiative.</characteristic>
         <entryLink id="6419-36f5-0268-4c70" name="Altruistic Commander" hidden="false" collective="false" import="true" targetId="a9bf-5adc-d225-0604" type="selectionEntry"/>
         <entryLink id="b5c2-939b-edd8-e2b9" name="Superb Commander" hidden="false" collective="false" import="true" targetId="4de4-d2e9-40af-d8e1" type="selectionEntry"/>
         <entryLink id="e165-04d7-88b4-c84c" name="Risky Commander" hidden="false" collective="false" import="true" targetId="bb64-7d15-1351-2d97" type="selectionEntry"/>
+        <entryLink id="b472-2c05-20ab-d5d6" name="Inspired Commander" hidden="false" collective="false" import="true" targetId="a20e-f7be-fef9-d141" type="selectionEntry"/>
+        <entryLink id="a9c1-a146-9c3a-b6f4" name="Artillery Observer" hidden="false" collective="false" import="true" targetId="0d07-7d5a-8d1b-dd06" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="4f63-6543-af5a-7de7" name="Crew: Driver" hidden="false" collective="false" import="true">
@@ -540,6 +594,7 @@ Cheiftain Tanks in this Platoon gain +2 Initiative.</characteristic>
         <entryLink id="33be-bdd2-59b1-7baa" name="Risky Gunner" hidden="false" collective="false" import="true" targetId="c697-789d-b470-3aa1" type="selectionEntry"/>
         <entryLink id="3177-df92-fa52-8c15" name="Dead-Eye Gunner" hidden="false" collective="false" import="true" targetId="39f9-6a23-90c6-c4a4" type="selectionEntry"/>
         <entryLink id="95ae-14c4-015a-03e9" name="Resourceful Gunner" hidden="false" collective="false" import="true" targetId="6a5b-7447-4a53-a452" type="selectionEntry"/>
+        <entryLink id="c90b-5517-a65c-4243" name="Sharpshooter Gunner" hidden="false" collective="false" import="true" targetId="1e50-f931-bd9f-c4c3" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="1ccc-f4af-a489-2a9b" name="Crew: Loader" hidden="false" collective="false" import="true">
