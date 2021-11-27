@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue id="e0ab-b75c-9a1b-1d47" name="American" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="c4ca-1ece-ac34-246b" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="54a1-d682-1d08-1e4c" name="Alpha 66" hidden="false"/>
