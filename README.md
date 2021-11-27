@@ -49,6 +49,12 @@ This repository contains all Global, USA and Soviet cards from Starter Set as we
 * French AMX-10P
 * French AMX-30
 
+I've also added some custom content from the WW2Modelzone blog. Custom content has to be enabled by adding the 'Enable Custom Content' item to your roster/platoon.
+* USA M109 Howitzer [Link](https://ww2modelzone.blogspot.com/2019/01/tanks-modern-age-custom-unit-1.html)
+* USA M2 Bradley [Link](https://ww2modelzone.blogspot.com/2019/05/tanks-modern-age-custom-unit-3.html)
+* Soviet 2S1 122mm Howizter [Link](https://ww2modelzone.blogspot.com/2019/01/tanks-modern-age-custom-unit-1_27.html)
+* Soviet BTR-80 [Link](https://ww2modelzone.blogspot.com/2019/05/tanks-modern-age-custom-unit-4.html)
+
 __What's this?__
 
 BSData organisation created this project. It's a GitHub repository of datafiles.
