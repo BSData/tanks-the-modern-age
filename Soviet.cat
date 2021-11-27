@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d908-9a77-c2df-62d3" name="Soviet" revision="4" battleScribeVersion="2.03" authorName="Jason Bardey" library="false" gameSystemId="c4ca-1ece-ac34-246b" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d908-9a77-c2df-62d3" name="Soviet" revision="3" battleScribeVersion="2.03" authorName="Jason Bardey" library="false" gameSystemId="c4ca-1ece-ac34-246b" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="b88c-f171-9123-f80b" name="AT-10 Stabber Upgrade" hidden="false">
       <comment>Category for vehicles allowed to have the AT-10 Stabber Upgrade.
@@ -276,79 +276,6 @@ T-64</comment>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="c525-9df6-1886-28e4" value="18.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="639d-ae44-7edd-fde7" name="2S1 122mm Howitzer" page="" hidden="false" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="199f-4016-e54b-90db" type="lessThan"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <profiles>
-        <profile id="a3fa-386b-a3e1-78f8" name="2S1 122mm Howitzer" page=" " hidden="false" typeId="d470-1387-e9b7-4e31" typeName="Tank">
-          <characteristics>
-            <characteristic name="Crew Slots" typeId="0ab1-226b-bc56-8d04">4</characteristic>
-            <characteristic name="Initiative" typeId="4bdf-d9ca-d63e-e9ae">1</characteristic>
-            <characteristic name="Attack" typeId="511c-4053-b96a-3393">4</characteristic>
-            <characteristic name="Defence" typeId="5aea-3707-f320-3b58">0</characteristic>
-            <characteristic name="Damage Capacity" typeId="b389-b659-b7d8-1dbe">3</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="abfc-b8dd-ccec-ac78" name="Artillery" hidden="false" targetId="3d34-3eb0-f6e1-0e52" type="rule"/>
-        <infoLink id="1d00-87d3-d080-2e7f" name="Brutal" hidden="false" targetId="4efa-29ad-9553-cd34" type="rule"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="393d-765a-201c-7c7e" name="New CategoryLink" hidden="false" targetId="330c-c123-06df-86db" primary="false"/>
-        <categoryLink id="6cb0-af8b-b562-c976" name="New CategoryLink" hidden="false" targetId="41cd-9622-6b80-1bc3" primary="true"/>
-        <categoryLink id="6d9a-2dd1-ef29-0823" name="Artillery" hidden="false" targetId="00f8-7fc8-2a77-9b9f" primary="false"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="83fd-fac0-f054-94c0" name="Crew (4)" hidden="false" collective="false" import="true" targetId="b190-a34c-7da8-279f" type="selectionEntryGroup"/>
-        <entryLink id="27ea-ae43-0173-7e04" name="Upgrades" hidden="false" collective="false" import="true" targetId="99ff-3f4c-6846-2de8" type="selectionEntryGroup"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="c525-9df6-1886-28e4" value="10.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="4fc5-38df-4244-52a0" name="BTR-80" page="https://ww2modelzone.blogspot.com/2019/05/tanks-modern-age-custom-unit-4.html" hidden="false" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="199f-4016-e54b-90db" type="lessThan"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <profiles>
-        <profile id="d4f7-3dbe-8e00-478b" name="BTR-80" hidden="false" typeId="d470-1387-e9b7-4e31" typeName="Tank">
-          <characteristics>
-            <characteristic name="Crew Slots" typeId="0ab1-226b-bc56-8d04">4</characteristic>
-            <characteristic name="Initiative" typeId="4bdf-d9ca-d63e-e9ae">8</characteristic>
-            <characteristic name="Attack" typeId="511c-4053-b96a-3393">2</characteristic>
-            <characteristic name="Defence" typeId="5aea-3707-f320-3b58">0</characteristic>
-            <characteristic name="Damage Capacity" typeId="b389-b659-b7d8-1dbe">3</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="4768-9300-8d97-d2f8" name="Wheeled" hidden="false" targetId="73d4-7716-8d7b-006a" type="rule"/>
-        <infoLink id="e39c-e9b7-bf35-af5a" name="Fast" hidden="false" targetId="458a-cf6f-36e5-e79a" type="rule"/>
-        <infoLink id="57ea-b923-a57b-3369" name="Rapid Fire (X)" hidden="false" targetId="0406-4110-1519-7897" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Rapid Fire (5)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="7ec6-e59e-220f-971e" name="Scout" hidden="false" targetId="d441-5387-0036-2dab" type="rule"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="4595-90b3-e8d1-bbad" name="New CategoryLink" hidden="false" targetId="41cd-9622-6b80-1bc3" primary="true"/>
-        <categoryLink id="992e-39bd-2b54-5112" name="Custom Content" hidden="false" targetId="330c-c123-06df-86db" primary="false"/>
-      </categoryLinks>
-      <costs>
-        <cost name="pts" typeId="c525-9df6-1886-28e4" value="11.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
@@ -804,16 +731,16 @@ This Helicopter gains +1 Attack when Shooting Tanks with Base 2 Defence or highe
             <cost name="pts" typeId="c525-9df6-1886-28e4" value="2.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="90d5-c862-6697-538d" name="UB-32 Rocket Launcher" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="41cd-9622-6b80-1bc3" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
+        <selectionEntry id="3089-5f03-eda0-3686" name="UB-32 Rocket Launcher" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
-            <profile id="9ef5-900b-2eb1-7eec" name="UB-32 Rocket Launcher" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+            <profile id="b03d-c3b8-a29a-ab26" name="UB-32 Rocket Launcher" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="41cd-9622-6b80-1bc3" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <characteristics>
                 <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">Instead of its normal Attack, this Model may discard this card to make an unmodified 2 Attack against the Target Tank and all Tanks within Close Range of the Target Tank. Targets only roll their Base Defence against this Attack.</characteristic>
               </characteristics>
@@ -821,6 +748,7 @@ This Helicopter gains +1 Attack when Shooting Tanks with Base 2 Defence or highe
           </profiles>
           <categoryLinks>
             <categoryLink id="b187-a2f0-6273-59ec" name="Upgrade" hidden="false" targetId="1478-ca00-f06f-b9d5" primary="false"/>
+            <categoryLink id="94c5-03ef-862e-2ccf" name="Helicopter" hidden="false" targetId="5c6a-3ad0-54b2-6193" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name="pts" typeId="c525-9df6-1886-28e4" value="3.0"/>
@@ -926,9 +854,6 @@ This Helicopter gains +1 Attack when Shooting Tanks with Base 2 Defence or highe
               </modifiers>
             </infoLink>
           </infoLinks>
-          <costs>
-            <cost name="pts" typeId="c525-9df6-1886-28e4" value="0.0"/>
-          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -962,8 +887,8 @@ This Helicopter gains +1 Attack when Shooting Tanks with Base 2 Defence or highe
             </profile>
           </profiles>
           <categoryLinks>
-            <categoryLink id="4b69-81da-7b24-d852" name="Tank" hidden="false" targetId="41cd-9622-6b80-1bc3" primary="false"/>
-            <categoryLink id="b1e9-2598-7e5b-737d" name="Upgrade" hidden="false" targetId="1478-ca00-f06f-b9d5" primary="false"/>
+            <categoryLink id="9996-b8de-b816-f8d5" name="Upgrade" hidden="false" targetId="1478-ca00-f06f-b9d5" primary="false"/>
+            <categoryLink id="ea8d-e6da-a951-a379" name="Tank" hidden="false" targetId="41cd-9622-6b80-1bc3" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name="pts" typeId="c525-9df6-1886-28e4" value="6.0"/>
