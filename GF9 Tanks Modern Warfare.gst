@@ -48,15 +48,44 @@
     <categoryEntry id="330c-c123-06df-86db" name="Custom Content" hidden="false">
       <comment>Custom Content Category to support additon of non-offical content, e.g. new vehicles or weapons.</comment>
     </categoryEntry>
+    <categoryEntry id="199f-4016-e54b-90db" name="Options" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d878-5ffc-498f-f821" name="Platoon" hidden="false">
       <categoryLinks>
         <categoryLink id="8914-4229-4b18-6072" name="Helicopter" hidden="false" targetId="5c6a-3ad0-54b2-6193" primary="false"/>
         <categoryLink id="8888-b43d-feaa-8b0c" name="Tank" hidden="false" targetId="41cd-9622-6b80-1bc3" primary="false"/>
+        <categoryLink id="a1af-9852-0de7-c518" name="Options" hidden="false" targetId="199f-4016-e54b-90db" primary="false"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
+  <selectionEntries>
+    <selectionEntry id="b2bb-5aaa-55ee-5b5c" name="Enable Custom Content" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="acd8-c6f1-2227-3bcf" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="1ce8-3da2-6496-a32a" name="Enable Custom Content" hidden="false">
+          <description>This enables custom and unoffical content from third party sources. It may not have been playtested and could be unbalanced.
+
+USA
+M109 Howitzer https://ww2modelzone.blogspot.com/2019/01/tanks-modern-age-custom-unit-1.html
+M2 Bradley https://ww2modelzone.blogspot.com/2019/05/tanks-modern-age-custom-unit-3.html
+
+Soviet
+2S1 122mm Howizter https://ww2modelzone.blogspot.com/2019/01/tanks-modern-age-custom-unit-1_27.html
+BTR-80 https://ww2modelzone.blogspot.com/2019/05/tanks-modern-age-custom-unit-4.html
+</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="a142-a58e-37c1-e8e5" name="Options" hidden="false" targetId="199f-4016-e54b-90db" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="c525-9df6-1886-28e4" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="8ec9-b9d7-f71a-4e8a" name="Upgrade: Ammo (Global)" hidden="false" collective="false" import="true">
       <categoryLinks>
