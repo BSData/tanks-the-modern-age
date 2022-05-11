@@ -69,13 +69,16 @@
           <description>This enables custom and unoffical content from third party sources. It may not have been playtested and could be unbalanced.
 
 USA
-M109 Howitzer https://ww2modelzone.blogspot.com/2019/01/tanks-modern-age-custom-unit-1.html
-M2 Bradley https://ww2modelzone.blogspot.com/2019/05/tanks-modern-age-custom-unit-3.html
+M109 Howitzer		https://ww2modelzone.blogspot.com/2019/01/tanks-modern-age-custom-unit-1.html
+M2 Bradley 			https://ww2modelzone.blogspot.com/2019/05/tanks-modern-age-custom-unit-3.html
 
 Soviet
 2S1 122mm Howizter https://ww2modelzone.blogspot.com/2019/01/tanks-modern-age-custom-unit-1_27.html
-BTR-80 https://ww2modelzone.blogspot.com/2019/05/tanks-modern-age-custom-unit-4.html
-</description>
+BTR-80 				https://ww2modelzone.blogspot.com/2019/05/tanks-modern-age-custom-unit-4.html
+
+German
+Jaguar 1				https://ww2modelzone.blogspot.com/2019/05/tanks-modern-age-custom-unit-5.html
+		Full title is &apos;Raketenjagdpanzer Jaguar 1&apos;, but I just refer to it as the Jaguar 1.</description>
         </rule>
       </rules>
       <categoryLinks>

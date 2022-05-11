@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="07c3-897b-4ba2-eda6" name="German" revision="2" battleScribeVersion="2.03" authorName="Jason Bardey" library="false" gameSystemId="c4ca-1ece-ac34-246b" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="07c3-897b-4ba2-eda6" name="German" revision="3" battleScribeVersion="2.03" authorName="Jason Bardey" library="false" gameSystemId="c4ca-1ece-ac34-246b" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="1786-a821-0e19-dbef" name="Marder" hidden="false">
       <comment>Category to restrict Mounted MILAN to Marder	</comment>
     </categoryEntry>
+    <categoryEntry id="eb8d-18d1-3037-d055" name="Jaguar 1" hidden="false"/>
   </categoryEntries>
   <selectionEntries>
     <selectionEntry id="3627-8ecf-fd35-d91c" name="Marder" hidden="false" collective="false" import="true" type="model">
@@ -119,6 +120,47 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="c525-9df6-1886-28e4" value="32.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="80f0-3a2d-0f98-3618" name="Jaguar 1" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="199f-4016-e54b-90db" type="lessThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="4e6e-175d-51d6-a6b0" name="Jaguar 1" hidden="false" typeId="d470-1387-e9b7-4e31" typeName="Tank">
+          <characteristics>
+            <characteristic name="Crew Slots" typeId="0ab1-226b-bc56-8d04">4</characteristic>
+            <characteristic name="Initiative" typeId="4bdf-d9ca-d63e-e9ae">4</characteristic>
+            <characteristic name="Attack" typeId="511c-4053-b96a-3393">0</characteristic>
+            <characteristic name="Defence" typeId="5aea-3707-f320-3b58">0</characteristic>
+            <characteristic name="Damage Capacity" typeId="b389-b659-b7d8-1dbe">3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="292e-6376-f03e-e23d" name="Hammerhead" hidden="false" targetId="5807-b2d3-c117-d56b" type="rule"/>
+        <infoLink id="ea36-9c56-74b7-51bf" name="Scout" hidden="false" targetId="d441-5387-0036-2dab" type="rule"/>
+        <infoLink id="8749-c207-a7f0-c93e" name="Missiles (X)" hidden="false" targetId="726c-f879-474a-444f" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Missiles (4)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="c868-036b-69d8-5523" name="New CategoryLink" hidden="false" targetId="41cd-9622-6b80-1bc3" primary="true"/>
+        <categoryLink id="d18f-15d5-651c-850b" name="Custom Content" hidden="false" targetId="330c-c123-06df-86db" primary="false"/>
+        <categoryLink id="8cca-9302-45e0-269a" name="Jaguar 1" hidden="false" targetId="eb8d-18d1-3037-d055" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="6340-42a5-6f06-1e51" name="Crew (4)" hidden="false" collective="false" import="true" targetId="fa58-c5ac-5f07-8abf" type="selectionEntryGroup"/>
+        <entryLink id="a434-de57-6edd-f7d0" name="Upgrades" hidden="false" collective="false" import="true" targetId="afd9-948f-5af8-3fce" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="c525-9df6-1886-28e4" value="14.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
@@ -500,6 +542,34 @@ This Tank gains Missiles (4).</characteristic>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d4fb-2380-d310-10ba" type="max"/>
       </constraints>
+      <selectionEntries>
+        <selectionEntry id="0162-c95f-d429-b161" name="A3 Upgrade" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="eb8d-18d1-3037-d055" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile id="299f-a96f-0ace-6f9a" name="A3 Upgrade" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+              <characteristics>
+                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">Jaguar 1 only.
+
+When rolling Attack dice, you may re-roll one die. 
+
+From 1993, the Jaguar was upgraded to the A3 version. This added new optics and a thermal imaging system.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="0b89-fa1c-ba1c-a2f7" name="Custom Content" hidden="false" targetId="330c-c123-06df-86db" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="c525-9df6-1886-28e4" value="3.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <entryLinks>
         <entryLink id="9752-2b1d-ed8d-f9b2" name="Countermeasures" hidden="false" collective="false" import="true" targetId="06fd-547c-7764-5b1c" type="selectionEntry"/>
         <entryLink id="6b4e-93a2-e09a-60a8" name="Protected Ammo" hidden="false" collective="false" import="true" targetId="3814-af75-83b0-632a" type="selectionEntry"/>

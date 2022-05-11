@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d908-9a77-c2df-62d3" name="Soviet" revision="4" battleScribeVersion="2.03" authorName="Jason Bardey" library="false" gameSystemId="c4ca-1ece-ac34-246b" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d908-9a77-c2df-62d3" name="Soviet" revision="5" battleScribeVersion="2.03" authorName="Jason Bardey" library="false" gameSystemId="c4ca-1ece-ac34-246b" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="b88c-f171-9123-f80b" name="AT-10 Stabber Upgrade" hidden="false">
       <comment>Category for vehicles allowed to have the AT-10 Stabber Upgrade.
@@ -733,6 +733,7 @@ This Helicopter gains +1 Attack when Shooting Tanks with Base 2 Defence or highe
         <entryLink id="ae39-9999-9bda-20e9" name="Crew: Pilot" hidden="false" collective="false" import="true" targetId="4dfd-404c-02c3-0d02" type="selectionEntryGroup"/>
         <entryLink id="ad39-9994-646a-b6fe" name="Crew: Loader" hidden="false" collective="false" import="true" targetId="c1d8-24b6-f961-9017" type="selectionEntryGroup"/>
         <entryLink id="fb1c-082f-bcbb-bdbb" name="Crew: Gunner" hidden="false" collective="false" import="true" targetId="52a4-4af7-e474-f16b" type="selectionEntryGroup"/>
+        <entryLink id="eb6f-da1f-ed74-7c3e" name="Crew: Radio Op" hidden="false" collective="false" import="true" targetId="89e2-191f-2359-543d" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="9293-a1e3-75d8-7f3d" name="Crew (3)" hidden="false" collective="false" import="true">
@@ -745,6 +746,7 @@ This Helicopter gains +1 Attack when Shooting Tanks with Base 2 Defence or highe
         <entryLink id="b5d6-30e2-6efd-a2aa" name="Crew: Pilot" hidden="false" collective="false" import="true" targetId="4dfd-404c-02c3-0d02" type="selectionEntryGroup"/>
         <entryLink id="0ceb-6828-7906-8a28" name="Crew: Loader" hidden="false" collective="false" import="true" targetId="c1d8-24b6-f961-9017" type="selectionEntryGroup"/>
         <entryLink id="57c6-1174-2f5f-550b" name="Crew: Gunner" hidden="false" collective="false" import="true" targetId="52a4-4af7-e474-f16b" type="selectionEntryGroup"/>
+        <entryLink id="06ae-06f4-6a11-a5e2" name="Crew: Radio Op" hidden="false" collective="false" import="true" targetId="89e2-191f-2359-543d" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="a412-058b-e7e2-f3eb" name="Upgrade: Ammo" hidden="false" collective="false" import="true">
@@ -1000,6 +1002,36 @@ This Helicopter gains +1 Attack when Shooting Tanks with Base 2 Defence or highe
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f015-05f7-9dcc-f471" type="max"/>
       </constraints>
+      <selectionEntries>
+        <selectionEntry id="2125-bacf-c5d3-8f63" name="Autoloading Device" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="00f8-7fc8-2a77-9b9f" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a88e-ae94-be6a-5ffd" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="4c05-89f0-c6e3-fa95" name="Autoloading Device" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+              <characteristics>
+                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">While Shooting, this Tank may re-roll any results of &apos;1&apos;.
+
+This Upgrade may only be added to a Tank with the Artillery keyword.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="4193-541a-cd8c-3b28" name="Custom Content" hidden="false" targetId="330c-c123-06df-86db" primary="false"/>
+            <categoryLink id="0a3f-05b6-8fe9-e8c7" name="Upgrade" hidden="false" targetId="1478-ca00-f06f-b9d5" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="c525-9df6-1886-28e4" value="3.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <entryLinks>
         <entryLink id="b7ff-b074-55dc-9ceb" name="Countermeasures" hidden="false" collective="false" import="true" targetId="06fd-547c-7764-5b1c" type="selectionEntry"/>
         <entryLink id="f8d6-9654-9c2e-5213" name="Protected Ammo" hidden="false" collective="false" import="true" targetId="3814-af75-83b0-632a" type="selectionEntry"/>
@@ -1018,6 +1050,42 @@ This Helicopter gains +1 Attack when Shooting Tanks with Base 2 Defence or highe
         <entryLink id="100b-f6af-cd36-7ca9" name="Upgrade: Equipment" hidden="false" collective="false" import="true" targetId="776c-d0e0-492e-ce21" type="selectionEntryGroup"/>
         <entryLink id="1c8b-3b64-32f0-7fdb" name="Upgrade: Engine" hidden="false" collective="false" import="true" targetId="915c-3fb3-7258-0d5a" type="selectionEntryGroup"/>
       </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="89e2-191f-2359-543d" name="Crew: Radio Op" hidden="false" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="199f-4016-e54b-90db" type="lessThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5c6a-3ad0-54b2-6193" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d05-d006-2ee6-53e1" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="308b-4960-21d5-cec0" name="Artillery Scout" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="fe1d-81cd-719f-d98f" name="Artillery Scout" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+              <characteristics>
+                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">Once per Turn a Stationary Tank with the Artillery keyword may draw its line of sight from this Tank instead of itself when Shooting.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="7917-9cf1-90ad-21b3" name="Custom Content" hidden="false" targetId="330c-c123-06df-86db" primary="false"/>
+            <categoryLink id="7c16-4416-5ab1-5489" name="Crew" hidden="false" targetId="5e8f-5e97-f0cf-b29a" primary="false"/>
+            <categoryLink id="44b2-3fdf-5d94-b071" name="Tank" hidden="false" targetId="41cd-9622-6b80-1bc3" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="c525-9df6-1886-28e4" value="2.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
 </catalogue>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e0ab-b75c-9a1b-1d47" name="American" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="c4ca-1ece-ac34-246b" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e0ab-b75c-9a1b-1d47" name="American" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="c4ca-1ece-ac34-246b" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="54a1-d682-1d08-1e4c" name="Alpha 66" hidden="false"/>
     <categoryEntry id="3537-0416-30f7-2b6b" name="M109 or M163" hidden="false">
@@ -11,6 +11,7 @@
     <categoryEntry id="c59f-6cba-84f1-7abd" name="Cobra Helicopter" hidden="false">
       <comment>Restrict Improved TOW to Cobra Helicopter.</comment>
     </categoryEntry>
+    <categoryEntry id="b2bf-942d-1e89-b265" name="M2 Bradley APC" hidden="false"/>
   </categoryEntries>
   <selectionEntries>
     <selectionEntry id="de0d-88df-496d-1666" name="Humvee-TOW" hidden="false" collective="false" import="true" type="model">
@@ -316,6 +317,83 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="c525-9df6-1886-28e4" value="14.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7d8a-ec06-2980-49d3" name="M2 Bradley APC" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="199f-4016-e54b-90db" type="lessThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="7e0f-848a-9328-4e9b" name="M2 Bradley APC" hidden="false" typeId="d470-1387-e9b7-4e31" typeName="Tank">
+          <characteristics>
+            <characteristic name="Crew Slots" typeId="0ab1-226b-bc56-8d04">4</characteristic>
+            <characteristic name="Initiative" typeId="4bdf-d9ca-d63e-e9ae">8</characteristic>
+            <characteristic name="Attack" typeId="511c-4053-b96a-3393">2</characteristic>
+            <characteristic name="Defence" typeId="5aea-3707-f320-3b58">0</characteristic>
+            <characteristic name="Damage Capacity" typeId="b389-b659-b7d8-1dbe">3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="1a63-84f5-295b-515f" name="Rapid Fire (X)" hidden="false" targetId="0406-4110-1519-7897" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Rapid Fire (5)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="5c83-9227-f97e-e7bb" name="Scout" hidden="false" targetId="d441-5387-0036-2dab" type="rule"/>
+        <infoLink id="f51f-040a-15d4-0537" name="Spearhead" hidden="false" targetId="3da3-8525-09c9-8125" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="be0d-50cf-a0b1-6ae7" name="M2 Bradley APC" hidden="false" targetId="b2bf-942d-1e89-b265" primary="false"/>
+        <categoryLink id="401f-0118-3cbf-d738" name="Tank" hidden="false" targetId="41cd-9622-6b80-1bc3" primary="true"/>
+        <categoryLink id="b610-5921-36fb-55f2" name="Custom Content" hidden="false" targetId="330c-c123-06df-86db" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="1fe1-93c9-e4dc-b9d0" name="Crew (4)" hidden="false" collective="false" import="true" targetId="ea6e-d90f-39db-177a" type="selectionEntryGroup"/>
+        <entryLink id="9898-49fe-ee0d-e67c" name="Upgrades" hidden="false" collective="false" import="true" targetId="836f-bad9-26e7-7b30" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="c525-9df6-1886-28e4" value="13.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="60e4-557c-c76a-5d93" name="M109 Howitzer" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="199f-4016-e54b-90db" type="lessThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="8b9b-c42a-afe9-8a58" name="M109 Howitzer" hidden="false" typeId="d470-1387-e9b7-4e31" typeName="Tank">
+          <characteristics>
+            <characteristic name="Crew Slots" typeId="0ab1-226b-bc56-8d04">4</characteristic>
+            <characteristic name="Initiative" typeId="4bdf-d9ca-d63e-e9ae">1</characteristic>
+            <characteristic name="Attack" typeId="511c-4053-b96a-3393">4</characteristic>
+            <characteristic name="Defence" typeId="5aea-3707-f320-3b58">0</characteristic>
+            <characteristic name="Damage Capacity" typeId="b389-b659-b7d8-1dbe">3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="302c-dd30-9ee2-23d2" name="Artillery" hidden="false" targetId="3d34-3eb0-f6e1-0e52" type="rule"/>
+        <infoLink id="02fe-d556-2225-ce41" name="Brutal" hidden="false" targetId="4efa-29ad-9553-cd34" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="8022-cea1-be27-f311" name="Custom Content" hidden="false" targetId="330c-c123-06df-86db" primary="false"/>
+        <categoryLink id="c6df-5d39-19a7-c587" name="Tank" hidden="false" targetId="41cd-9622-6b80-1bc3" primary="true"/>
+        <categoryLink id="8d63-57b4-e17f-c986" name="Artillery" hidden="false" targetId="00f8-7fc8-2a77-9b9f" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="bd9b-6c2b-1d91-a2e7" name="Crew (4)" hidden="false" collective="false" import="true" targetId="ea6e-d90f-39db-177a" type="selectionEntryGroup"/>
+        <entryLink id="caad-65d3-7b9a-3d78" name="Upgrades" hidden="false" collective="false" import="true" targetId="836f-bad9-26e7-7b30" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="c525-9df6-1886-28e4" value="10.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
@@ -743,6 +821,29 @@ When you use an Ammo card, roll a die. On a result of a 5 or 6 that card is not 
             <cost name="pts" typeId="c525-9df6-1886-28e4" value="4.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="c0ae-6af3-fc28-71c8" name="Artillery Scout" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5c6a-3ad0-54b2-6193" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile id="2569-5e3a-4fb8-cbb4" name="Artillery Scout" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+              <characteristics>
+                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">Once per Turn a Stationary Tank with the Artillery keyword may draw its line of sight from this Tank instead of itself when Shooting.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="18b8-b53e-3693-ce86" name="Crew" hidden="false" targetId="5e8f-5e97-f0cf-b29a" primary="false"/>
+            <categoryLink id="e358-45ff-06e8-52ef" name="Custom Content" hidden="false" targetId="330c-c123-06df-86db" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="c525-9df6-1886-28e4" value="2.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="f863-c2b3-4dec-40fa" name="Aggressive Loader" hidden="false" collective="false" import="true" targetId="9f4e-3567-50d5-20f0" type="selectionEntry"/>
@@ -823,6 +924,9 @@ Discard to gain +1 Attack</characteristic>
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink id="ff4b-6788-c2dc-d1f1" name="Upgrade" hidden="false" targetId="1478-ca00-f06f-b9d5" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="c525-9df6-1886-28e4" value="2.0"/>
           </costs>
@@ -858,6 +962,9 @@ Discard to gain +1 Attack</characteristic>
               </conditions>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d262-c281-61d8-f6da" type="max"/>
+          </constraints>
           <profiles>
             <profile id="a537-062b-c0d6-2d19" name="Improved TOW" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
               <characteristics>
@@ -872,6 +979,41 @@ Discard to gain +1 Attack</characteristic>
               </modifiers>
             </infoLink>
           </infoLinks>
+          <costs>
+            <cost name="pts" typeId="c525-9df6-1886-28e4" value="2.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7a9a-2e30-12dd-04e9" name="TOW Missile System" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b2bf-942d-1e89-b265" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2bc2-5a48-5a7d-2bd0" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="ee9a-12c3-4375-5fa4" name="TOW Missile System" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+              <characteristics>
+                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">M2 Bradley APC only. This Tank gains Missiles (5).
+
+Missiles (5): When shooting this Model can choose to roll 5 Attack dice against Tanks or Helicopters (following the rules on page 20 of the rulebook).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="46bf-708e-481d-ec4a" name="Missiles (X)" hidden="false" targetId="726c-f879-474a-444f" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Missiles (5)"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="82c0-bea5-6b22-3682" name="Custom Content" hidden="false" targetId="330c-c123-06df-86db" primary="false"/>
+            <categoryLink id="f534-4fd6-4e78-a63b" name="Upgrade" hidden="false" targetId="1478-ca00-f06f-b9d5" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="c525-9df6-1886-28e4" value="2.0"/>
           </costs>
@@ -953,6 +1095,36 @@ Discard this card to cancel an Injured Crew or Bailed Out effect.</characteristi
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7195-e9ee-728a-635e" type="max"/>
       </constraints>
+      <selectionEntries>
+        <selectionEntry id="f6fb-d75e-6654-8770" name="Target Computer" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="00f8-7fc8-2a77-9b9f" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f67e-c513-a5d2-f379" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="6c12-c2d8-32c9-fdec" name="Target Computer" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+              <characteristics>
+                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">While Shooting, this Tank may re-roll any results of &apos;1&apos;.
+
+This Upgrade may only be added to a Tank with the Artillery keyword.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="8673-5260-f4ac-39bb" name="Custom Content" hidden="false" targetId="330c-c123-06df-86db" primary="false"/>
+            <categoryLink id="98ed-4d8d-81f7-1040" name="Upgrade" hidden="false" targetId="1478-ca00-f06f-b9d5" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="c525-9df6-1886-28e4" value="3.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <entryLinks>
         <entryLink id="9793-d5a0-d96d-1950" name="Countermeasures" hidden="false" collective="false" import="true" targetId="06fd-547c-7764-5b1c" type="selectionEntry">
           <constraints>
@@ -1022,6 +1194,7 @@ Discard this card to cancel an Injured Crew or Bailed Out effect.</characteristi
         <entryLink id="a832-c6fc-e1ba-01fc" name="Crew: Gunner" hidden="false" collective="false" import="true" targetId="e48a-923a-5dfb-6aa4" type="selectionEntryGroup"/>
         <entryLink id="cfc0-aba3-2906-53f8" name="Crew: Pilot" hidden="false" collective="false" import="true" targetId="5165-a862-b482-3239" type="selectionEntryGroup"/>
         <entryLink id="4bf4-1f39-d314-9767" name="Crew: Loader" hidden="false" collective="false" import="true" targetId="70f8-5553-759f-6635" type="selectionEntryGroup"/>
+        <entryLink id="f280-bb9c-b341-b7bb" name="Crew: Radio Op" hidden="false" collective="false" import="true" targetId="33b3-295b-1287-7f79" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="3fb5-adf7-223b-9ab7" name="Crew (3)" hidden="false" collective="false" import="true">
@@ -1034,7 +1207,44 @@ Discard this card to cancel an Injured Crew or Bailed Out effect.</characteristi
         <entryLink id="a9f5-b32e-9d25-b6f3" name="Crew: Gunner" hidden="false" collective="false" import="true" targetId="e48a-923a-5dfb-6aa4" type="selectionEntryGroup"/>
         <entryLink id="fef7-86f1-78b4-3d16" name="Crew: Pilot" hidden="false" collective="false" import="true" targetId="5165-a862-b482-3239" type="selectionEntryGroup"/>
         <entryLink id="d64e-b5e6-5df7-6f15" name="Crew: Loader" hidden="false" collective="false" import="true" targetId="70f8-5553-759f-6635" type="selectionEntryGroup"/>
+        <entryLink id="2c32-7d45-cd55-a1de" name="Crew: Radio Op" hidden="false" collective="false" import="true" targetId="33b3-295b-1287-7f79" type="selectionEntryGroup"/>
       </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="33b3-295b-1287-7f79" name="Crew: Radio Op" hidden="false" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="199f-4016-e54b-90db" type="lessThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5c6a-3ad0-54b2-6193" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb40-3a75-a34e-58ae" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="9ef6-bbc8-b4c1-cff9" name="Artillery Scout" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="312d-de45-1617-4917" name="Artillery Scout" hidden="false" typeId="4681-227b-f9c3-19b9" typeName="Upgrade Card">
+              <characteristics>
+                <characteristic name="Ability Text" typeId="e410-4d67-58da-c109">Once per Turn a Stationary Tank with the Artillery keyword may draw its line of sight from this Tank instead of itself when Shooting.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="4de9-234c-ee8c-8d63" name="Custom Content" hidden="false" targetId="330c-c123-06df-86db" primary="false"/>
+            <categoryLink id="80f5-ebf5-1301-9755" name="Crew" hidden="false" targetId="5e8f-5e97-f0cf-b29a" primary="false"/>
+            <categoryLink id="eb76-0e00-875e-a61e" name="Tank" hidden="false" targetId="41cd-9622-6b80-1bc3" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="c525-9df6-1886-28e4" value="2.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
 </catalogue>
