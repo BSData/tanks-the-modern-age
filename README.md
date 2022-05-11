@@ -54,6 +54,7 @@ I've also added some custom content from the WW2Modelzone blog. Custom content h
 * USA M2 Bradley [Link](https://ww2modelzone.blogspot.com/2019/05/tanks-modern-age-custom-unit-3.html)
 * Soviet 2S1 122mm Howizter [Link](https://ww2modelzone.blogspot.com/2019/01/tanks-modern-age-custom-unit-1_27.html)
 * Soviet BTR-80 [Link](https://ww2modelzone.blogspot.com/2019/05/tanks-modern-age-custom-unit-4.html)
+* German Jaguar 1 [Link](https://ww2modelzone.blogspot.com/2019/05/tanks-modern-age-custom-unit-5.html)
 
 __What's this?__
 
