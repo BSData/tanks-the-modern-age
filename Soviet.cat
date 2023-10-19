@@ -929,7 +929,7 @@ This Helicopter gains +1 Attack when Shooting Tanks with Base 2 Defence or highe
             </infoLink>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="c525-9df6-1886-28e4" value="0.0"/>
+            <cost name="pts" typeId="c525-9df6-1886-28e4" value="2.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
